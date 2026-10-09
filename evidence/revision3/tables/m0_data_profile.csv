@@ -1,0 +1,22 @@
+predictor,n_missing,pct_missing,min,median,max,median_P,median_U,source_grade
+Tectonic Bedrock Age (MA),0,0.0,48.0,2000.0,4000.0,2960.0,2000.0,inferred · GSWA 1:500k bedrock geology 파생
+Interpreted Bedrock Age (MA),7360,10.48,5.333,2692.0,3731.0,2800.0,2684.0,inferred · GSWA 1:500k bedrock geology 파생
+TMI,4481,6.38,-4614.1274,-93.9147,31094.7988,-131.126,-93.4822,documented · GSWA MAGIX (CC BY 4.0)
+RTP,4481,6.38,-3885.1948,-54.4743,22324.0469,-108.5979,-53.8721,documented · GSWA MAGIX (CC BY 4.0)
+1VD,4481,6.38,-30.4708,-0.0095,97.2259,-0.0605,-0.0093,documented · GSWA MAGIX (CC BY 4.0)
+DGIR,0,0.0,-1269.1724,-169.929,604.9534,-79.0614,-171.0735,documented · Geoscience Australia (CC BY 4.0)
+AuSREM,0,0.0,89.2153,204.0115,241.972,207.2885,203.9295,documented · Geoscience Australia (CC BY 4.0)
+Prox_Ultramafic Source,0,0.0,0.0,41987.8241,529239.3547,1506.9224,43079.4025,inferred · GSWA 1:500k bedrock geology 파생
+Prox_MajorCrustal,0,0.0,0.3499,45013.1418,352797.6852,38928.4679,45134.4687,inferred · GSWA 1:500k bedrock geology 파생
+Prox_Fault,0,0.0,0.1503,24346.4173,346940.0578,12280.9062,24539.1063,inferred · GSWA 1:500k bedrock geology 파생
+worms_mag_1km,529,0.75,1.935,51.3343,2895.4909,69.1926,51.139,documented · GSWA MAGIX worm 산출물 (CC BY 4.0)
+worms_mag_4.6km,529,0.75,7.363,57.4706,775.8047,53.0105,57.5183,documented · GSWA MAGIX worm 산출물 (CC BY 4.0)
+worms_mag_11km,529,0.75,3.7567,55.5574,301.1669,44.8904,55.6715,documented · GSWA MAGIX worm 산출물 (CC BY 4.0)
+worms_mag_50km,529,0.75,4.7814,39.1358,117.373,34.7169,39.1884,documented · GSWA MAGIX worm 산출물 (CC BY 4.0)
+worms_grav_1km,529,0.75,1.1489,22.2811,232.3506,28.6201,22.2006,documented · GSWA MAGIX worm 산출물 (CC BY 4.0)
+worms_grav_4.6km,529,0.75,3.9179,32.9544,193.2209,40.8862,32.8613,documented · GSWA MAGIX worm 산출물 (CC BY 4.0)
+worms_grav_11km,529,0.75,5.7053,51.0826,284.222,54.0204,51.0427,documented · GSWA MAGIX worm 산출물 (CC BY 4.0)
+worms_grav_50km,529,0.75,12.468,79.3333,194.0763,68.5872,79.4707,documented · GSWA MAGIX worm 산출물 (CC BY 4.0)
+K_pct,203,0.29,-0.1996,0.521,4.7943,0.5658,0.5196,documented · GSWA MAGIX (CC BY 4.0)
+Th_ppm,203,0.29,-3.452,11.1079,122.1892,9.5122,11.1492,documented · GSWA MAGIX (CC BY 4.0)
+U_ppm,203,0.29,-1.2871,1.0891,10.5037,1.0999,1.0888,documented · GSWA MAGIX (CC BY 4.0)

@@ -1,0 +1,7 @@
+level,code,message
+warning,grid.equal_area_cells,"grid.equal_area_cells is not true: cell-count percentages (zone area %, lift tiers, capture per area) cannot be read as area fractions. Report counts, or weight by true cell area."
+info,features.unused_columns,"columns present but not selected (by your choice): ['cell_id', 'row', 'col', 'n_mineral_occurrence_points']"
+warning,spatial_cv.positive_blocks,positives occur in 18 blocks: inspect actual inner-fold positive counts after partitioning; the product of fold counts is not a necessary feasibility bound.
+warning,conformal.support_default,"default cross-conformal path: about 7 positives per calibration fold, but alpha=0.15, delta=0.05 needs >= 82 before ANY threshold can satisfy FNR+Hoeffding <= alpha. Below that, fnr_control_direct falls back to the minimum calibration score; all calibration samples are included, but inclusion of unseen samples is not guaranteed."
+warning,conformal.support_pooled_oof,"pooled-OOF path: about 34 training positives per outer fold < 82 needed for a non-vacuous threshold at alpha=0.15, delta=0.05."
+warning,label.test_support,"about 9 positives per outer test fold: PR-AUC, coverage and capture will have wide, unstable fold-to-fold variation. Report per-fold counts next to every metric."

@@ -1,0 +1,8 @@
+"열","정의","단위","역할","자료원","표본화","결측률","라이선스"
+"tmi_nT","Total magnetic intensity, GA magmap v7 2019 (documented: eCat 131505); cell mean of ~80 m pixels","nT","predictor","Total Magnetic Intensity (TMI) Grid of Australia 2019 - seventh edition (80 m)","mean","0","CC BY 4.0"
+"rtp_nT","TMI variable reduction to pole, magmap v7 2019 (eCat 131519)","nT","predictor","TMI Grid of Australia 2019 - VRTP","mean","0","CC BY 4.0"
+"vd1_nT_per_m","TMI first vertical derivative, magmap v7 2019","nT/m (inferred; confirm in eCat 132275)","predictor","TMI Grid of Australia 2019 - first vertical derivative","mean","0","CC BY 4.0"
+"k_pct","Radmap v4 2019 filtered potassium concentration","%","predictor","Radiometric Grid of Australia v4 2019 - filtered pct potassium","mean","0","CC BY 4.0"
+"th_ppm","Radmap v4 2019 filtered thorium (eCat 131967)","ppm","predictor","Radiometric Grid of Australia v4 2019 - filtered ppm thorium","mean","0","CC BY 4.0"
+"u_ppm","Radmap v4 2019 filtered uranium (eCat 131974)","ppm","predictor","Radiometric Grid of Australia v4 2019 - filtered ppm uranium","mean","0","CC BY 4.0"
+"dgir_gu","De-trended global isostatic residual gravity 2019 (eCat 144778); unit gu = µm/s² per eCat abstract (1 mGal = 10 gu)","gu (µm/s²)","predictor","National Gravity Compilation 2019 DGIR grid","mean","0","CC BY 4.0"

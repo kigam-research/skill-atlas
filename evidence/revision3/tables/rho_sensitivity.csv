@@ -1,0 +1,6 @@
+rho_cut,basis,Immediate,Priority,Follow-up,Potential,Excluded,candU_I+P,P_I+P,cap_I+P,P_I+P+F,cap_I+P+F,cells_diff_vs_primary
+0.2718,q20_inscope 0.272,471,910,2378,19573,46868,1201,180,0.22,384,0.4694,337
+0.3,PRIMARY 0.30 (~p25 in-scope),517,1060,2277,19478,46868,1367,210,0.2567,386,0.4719,0
+0.4,between q20 and median,602,1576,2210,18944,46868,1907,271,0.3313,408,0.4988,1220
+0.4403,in-scope median 0.440,630,1805,2216,18681,46868,2136,299,0.3655,419,0.5122,1768
+1000000000.0,no rho gating (rank+membership only),699,2809,3498,16326,46868,3134,374,0.4572,505,0.6174,5265

@@ -1,0 +1,73 @@
+{
+  "sourceCommit": "5311f8b873c55e8dc3f0495eaf437a083bc88986",
+  "sourceBranch": "task/20260920T074524Z-77d1c1-mpm-foundation",
+  "capturedAt": "2026-09-29T07:05:36.828753Z",
+  "statement": "PNG files are unchanged copies; CSV tables are extracted from committed JSON without new computation.",
+  "files": {
+    "ga-kambalda-grid-preview.png": {
+      "source": "docs/evals/mpm-data-acquisition-local-e2e/ga/table/ga_kambalda_grid.preview.png",
+      "sha256": "7288e832660da9abcb6efdc3cd7a12200d84466a671b4d26012d6f0152ae4133",
+      "width": 1854,
+      "height": 1771,
+      "role": "preview_figure() output of the 2026-09-22 local end-to-end test; reviewed by main and Claude"
+    },
+    "ga-kambalda-mpm-input-preview.png": {
+      "source": "docs/evals/mpm-data-acquisition-local-e2e/ga/table/mpm-input.preview.png",
+      "sha256": "2028a4745a94ef591b54dbc92a66b935e74c0426ece9d8bd9d149747931a7ec0",
+      "width": 1854,
+      "height": 1771,
+      "role": "preview_figure() output of the 2026-09-22 local end-to-end test; reviewed by main and Claude"
+    },
+    "geoca-yukon-grid-preview.png": {
+      "source": "docs/evals/mpm-data-acquisition-local-e2e/yukon/table/geoca_yukon_grid.preview.png",
+      "sha256": "fa4e948a62107f7638789b8fbb2d582a05ade56add3d0c6e4c52151d1a699a99",
+      "width": 1878,
+      "height": 1146,
+      "role": "preview_figure() output of the 2026-09-22 local end-to-end test; reviewed by main and Claude"
+    },
+    "geoca-yukon-mpm-input-preview.png": {
+      "source": "docs/evals/mpm-data-acquisition-local-e2e/yukon/table/mpm-input.preview.png",
+      "sha256": "df229409a6c1dbb69f831c43a2ce6f8995ab69ed4b7b8323f2be84ae3c984866",
+      "width": 1878,
+      "height": 1146,
+      "role": "preview_figure() output of the 2026-09-22 local end-to-end test; reviewed by main and Claude"
+    },
+    "tables/acquisition-summary.csv": {
+      "sha256": "824dba4ff2ef85a961cb2fcbac00c6135df9695d4078b16d54ad428beaa4f442",
+      "derived_from": [
+        "docs/evals/mpm-data-acquisition-local-e2e/discovery/audit-summary.json",
+        "docs/evals/mpm-data-acquisition-local-e2e/ga/acquisition-state.json",
+        "docs/evals/mpm-data-acquisition-local-e2e/yukon/acquisition-state.json"
+      ],
+      "note": "Counts from the committed audit and state files of the 2026-09-22 local end-to-end test. Not a benchmark."
+    },
+    "tables/ga-kambalda-columns.csv": {
+      "sha256": "ade54e5d4eac468cb7109dd0d7a39c44f8769f01cd1440ad5bbeeaa27ea7fb6b",
+      "derived_from": [
+        "docs/evals/mpm-data-acquisition-local-e2e/ga/table/mpm-input.metadata.json"
+      ],
+      "note": "Column definitions, catalogue records, licences and sampling as recorded in the hand-off metadata."
+    },
+    "tables/ga-kambalda-validation-findings.csv": {
+      "sha256": "1327afa433047fc4dabc917240fd5e562dcf4af3b69c3b5852d3c66a2ad1007d",
+      "derived_from": [
+        "docs/evals/mpm-data-acquisition-local-e2e/ga/table/validation-report.json"
+      ],
+      "note": "mpm-workflow helper data-contract findings on the hand-off table (contract check only)."
+    },
+    "tables/geoca-yukon-columns.csv": {
+      "sha256": "d3cea50ac76bf8e9a9c85c2f5c3b7c7697b47c5493e45ec7a3af664d6d83831a",
+      "derived_from": [
+        "docs/evals/mpm-data-acquisition-local-e2e/yukon/table/mpm-input.metadata.json"
+      ],
+      "note": "Column definitions, catalogue records, licences and sampling as recorded in the hand-off metadata."
+    },
+    "tables/geoca-yukon-validation-findings.csv": {
+      "sha256": "5df4d9451b02d5191eaf61c356403565d524eacd5358e4f3e3e442d2eb1885a4",
+      "derived_from": [
+        "docs/evals/mpm-data-acquisition-local-e2e/yukon/table/validation-report.json"
+      ],
+      "note": "mpm-workflow helper data-contract findings on the hand-off table (contract check only)."
+    }
+  }
+}

@@ -1,0 +1,25 @@
+model,budget_count_fraction,rho_cut,planned_n,retained_n,captured_P,P_denominator,P_capture,tie_policy,membership_filter
+xgboost,0.01,,12,12,11,244,0.045081967213114756,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.01,0.15,12,10,9,244,0.036885245901639344,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.01,0.3,12,12,11,244,0.045081967213114756,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.01,0.5,12,12,11,244,0.045081967213114756,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.05,,57,57,44,244,0.18032786885245902,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.05,0.15,57,20,18,244,0.07377049180327869,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.05,0.3,57,49,39,244,0.1598360655737705,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.05,0.5,57,57,44,244,0.18032786885245902,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.1,,113,113,81,244,0.3319672131147541,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.1,0.15,113,21,19,244,0.0778688524590164,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.1,0.3,113,76,55,244,0.22540983606557377,"score desc, block_id asc; exact ceil(N*budget)",False
+xgboost,0.1,0.5,113,110,78,244,0.319672131147541,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.01,,12,12,11,244,0.045081967213114756,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.01,0.15,12,12,11,244,0.045081967213114756,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.01,0.3,12,12,11,244,0.045081967213114756,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.01,0.5,12,12,11,244,0.045081967213114756,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.05,,57,57,45,244,0.18442622950819673,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.05,0.15,57,54,43,244,0.1762295081967213,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.05,0.3,57,57,45,244,0.18442622950819673,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.05,0.5,57,57,45,244,0.18442622950819673,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.1,,113,113,76,244,0.3114754098360656,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.1,0.15,113,89,61,244,0.25,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.1,0.3,113,112,76,244,0.3114754098360656,"score desc, block_id asc; exact ceil(N*budget)",False
+baggingpu,0.1,0.5,113,112,76,244,0.3114754098360656,"score desc, block_id asc; exact ceil(N*budget)",False

@@ -1,0 +1,8 @@
+column,type,unit,definition,catalogue,record_id,record_title,licence,licence_verified,sampling,nodata_note,missing_fraction,source_sha256_prefix
+tmi_nT,raster,nT,"Total magnetic intensity, GA magmap v7 2019 (documented: eCat 131505); cell mean of ~80 m pixels",eCat,131505,Total Magnetic Intensity (TMI) Grid of Australia 2019 - seventh edition (80 m),CC BY 4.0,yes,mean,file nodata used,0.0000,5c108a3ded7d69a3
+rtp_nT,raster,nT,"TMI variable reduction to pole, magmap v7 2019 (eCat 131519)",eCat,131519,TMI Grid of Australia 2019 - VRTP,CC BY 4.0,yes,mean,file nodata used,0.0000,8ba371ae7d39e1f3
+vd1_nT_per_m,raster,nT/m (unit inferred from product name; confirm in eCat 132275),"TMI first vertical derivative, magmap v7 2019",eCat,132275,TMI Grid of Australia 2019 - first vertical derivative,CC BY 4.0,yes,mean,file nodata used,0.0000,8c94421c7c0bcf36
+k_pct,raster,%,Radmap v4 2019 filtered potassium concentration,eCat,,Radiometric Grid of Australia v4 2019 - filtered pct potassium,CC BY 4.0,yes,mean,file nodata used,0.0000,82dd063ce1f88acf
+th_ppm,raster,ppm,Radmap v4 2019 filtered thorium (eCat 131967),eCat,131967,Radiometric Grid of Australia v4 2019 - filtered ppm thorium,CC BY 4.0,yes,mean,file nodata used,0.0000,f97406219b5590da
+u_ppm,raster,ppm,Radmap v4 2019 filtered uranium (eCat 131974),eCat,131974,Radiometric Grid of Australia v4 2019 - filtered ppm uranium,CC BY 4.0,yes,mean,file nodata used,0.0000,b35297819873654d
+dgir_mGal,raster,mGal (inferred),De-trended global isostatic residual gravity 2019 (coverage id unverified),eCat,,2019 Australian National Gravity Grids - de-trended global isostatic residual (coverage id from capabilities; unverified),CC BY 4.0,yes,mean,file nodata used,0.0000,ab26116e0ce0a3f1

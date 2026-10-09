@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-22",
+  "statement": "Independent skill examples. Workflow: 40 km / 1122 blocks; acquisition: GA Kambalda v2. Not a linked execution.",
+  "files": [
+    {
+      "file": "workflow/m4_pr_comparison.png",
+      "source": "web/datasets/yilgarn/precomputed/m4_pr_comparison.png",
+      "sha256": "a117b81a5016c5262c820218404f9bc28b670a6d19a8812594f88462a587f182",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "workflow/m5_calibration.png",
+      "source": "web/datasets/yilgarn/precomputed/m5_calibration.png",
+      "sha256": "a8566888ba7b33fb236a7a8166ff16907c4a4f3955021ca302dadfc5df438025",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "workflow/m6_full_maps_baggingpu.png",
+      "source": "web/datasets/yilgarn/precomputed/m6_full_maps_baggingpu.png",
+      "sha256": "77c058cfc81d206f896f062239ff14b159640ca16ce31497a46ef211949b9a65",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "workflow/m6_full_maps_xgboost.png",
+      "source": "web/datasets/yilgarn/precomputed/m6_full_maps_xgboost.png",
+      "sha256": "e2368874ebf5e0fa7debd5e5a25d3728dd200a20ccf6f54b29513795fb5e5de1",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "workflow/m7_heldout_importance.png",
+      "source": "web/datasets/yilgarn/precomputed/m7_heldout_importance.png",
+      "sha256": "d599a35457616a8ff0ece8a4d5f9efe5bf48618e60515026b15347cb8e9a52d6",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "workflow/pooled_metrics.csv",
+      "source": "web/datasets/yilgarn/precomputed/pooled_metrics.csv",
+      "sha256": "641dbe820a9aca7ab02f655c1eed2db9fdef2be3c226a88458849fd25a2ff738",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "workflow/coverage_by_fold.csv",
+      "source": "web/datasets/yilgarn/precomputed/coverage_by_fold.csv",
+      "sha256": "2e84e7047e8b21dedaac32afac7f2d7d96c1ecf4a6ae997668701c316b0954db",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "workflow/m6_zone_summary_baggingpu.csv",
+      "source": "web/datasets/yilgarn/precomputed/m6_zone_summary_baggingpu.csv",
+      "sha256": "22e4f59c7d11994da2c39f90219cc49eb334270a2f6afe9f1df3a21ec5aa1c6c",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "workflow/m7_sensitivity.csv",
+      "source": "web/datasets/yilgarn/precomputed/m7_sensitivity.csv",
+      "sha256": "e03a5d3815c1a534a3cb92b7fad700510fcb27de051f4547f4a32ceac7f5f28c",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "workflow/manifest.json",
+      "source": "web/datasets/yilgarn/precomputed/manifest.json",
+      "sha256": "575952239e9bba340eadef1ca7f8865d25fe9eb7f40da1a260ef1b3167db2402",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "workflow/PROVENANCE.md",
+      "source": "web/datasets/yilgarn/precomputed/PROVENANCE.md",
+      "sha256": "ecf8bdf7db65e707fc87259f35baaeca7efe6b7510c9c26eb7187ad105cd0888",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "acquisition/ga_kambalda_v2.preview.png",
+      "source": "docs/evals/mpm-data-acquisition-live-smoke/ga-kambalda-v2/ga_kambalda_v2.preview.png",
+      "sha256": "86e461740ee0c6a5bbdaba8b3b0ed0fb0c446beb42b57939e73ea07d43913246",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "acquisition/ga_kambalda_v2.mpm-input.csv",
+      "source": "docs/evals/mpm-data-acquisition-live-smoke/ga-kambalda-v2/ga_kambalda_v2.mpm-input.csv",
+      "sha256": "6f6964f115972d6584214548d2a7d76d5a3523499ee92176a6781aa499002365",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "acquisition/ga_kambalda_v2.metadata.json",
+      "source": "docs/evals/mpm-data-acquisition-live-smoke/ga-kambalda-v2/ga_kambalda_v2.metadata.json",
+      "sha256": "cce33207fd3a1cf3e4b0ec295272d2089eabb619cbb21193a7e166fa143fad10",
+      "transformation": "unchanged copy"
+    },
+    {
+      "file": "acquisition/columns.csv",
+      "source": "docs/evals/mpm-data-acquisition-live-smoke/ga-kambalda-v2/ga_kambalda_v2.metadata.json",
+      "sha256": "6befa745c613260ddc64d08e8cee84c2923431b0c5a00e254d2b240bafeba00d",
+      "transformation": "column definitions, units, roles, record title, sampling, missing fraction and licence extracted without new calculations"
+    }
+  ]
+}

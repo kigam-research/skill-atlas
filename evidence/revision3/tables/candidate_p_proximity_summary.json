@@ -1,0 +1,35 @@
+{
+  "n_candidates": 1367,
+  "cand_dist_km": {
+    "min": 4.13,
+    "p25": 6.04,
+    "median": 9.91,
+    "p75": 21.89,
+    "p90": 37.71,
+    "max": 75.26
+  },
+  "frac_cand_le": {
+    "5km": 0.229,
+    "10km": 0.505,
+    "20km": 0.723,
+    "50km": 0.95,
+    "100km": 1.0
+  },
+  "allU_dist_km": {
+    "median": 45.12,
+    "p25": 22.57,
+    "p75": 85.31
+  },
+  "frac_allU_le": {
+    "5km": 0.029,
+    "10km": 0.093,
+    "20km": 0.214,
+    "50km": 0.541,
+    "100km": 0.803
+  },
+  "metric": "nearest recorded-P cell centroid distance, EPSG:3577 projected km (block-CRS approximation, not geodesic)",
+  "by_zone_median_km": {
+    "Immediate": 8.84,
+    "Priority": 12.75
+  }
+}

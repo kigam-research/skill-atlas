@@ -1,0 +1,3 @@
+site,sources_downloaded,data_requests,full_grid_cells,mpm_input_cells,cells_outside_aoi,predictors,positive_cells_full_grid,positive_cells_mpm_input,label_points_selected
+GA Kambalda (portal.ga.gov.au → eCat · WCS · WFS),8,8,2793,2639,154,7,28,28,35
+GEO.ca → GeoYukon (geocore · ESRI REST),5,5,3364,3080,284,5,45,43,45

@@ -1,0 +1,149 @@
+{
+  "m1-full-domain.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v2-focused-qwen-02-recovery-02/main-render-verification/figures/fig1-overview.png",
+    "sha256": "e00ed2947a7c58dcd11540c44713af3bffaf390d8c3beabd2ad1046f5fcd20ed",
+    "role": "Qwen-generated code; main executed unchanged copy after timeout"
+  },
+  "m1-distributions.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v2-focused-qwen-02-recovery-02/main-render-verification/figures/fig2-distributions.png",
+    "sha256": "aedc82c5d41054f2d213f65e796c9b4b852bdf4c42992dc380ae036e7b89f90c",
+    "role": "Qwen-generated code; main executed unchanged copy after timeout"
+  },
+  "m1-geological-relations.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v2-focused-qwen-02-recovery-02/main-render-verification/figures/fig3-geology-relationships.png",
+    "sha256": "2a30f8cf1d1bbc674c1312d87e3e206333aff6299a2c4f10d464f3eaff137ea7",
+    "role": "Qwen-generated code; main executed unchanged copy after timeout"
+  },
+  "m2-variograms.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-final-luna-01/workspace/results/spatial/figures/figure_01_variogram_diagnostics.png",
+    "sha256": "dfa54cf5206a1f0f84c0130ed1c9ab8505989bf432e1c518cce4ac5c08de70f5",
+    "role": "Frozen Luna spatial module; public prior-stage handoff"
+  },
+  "m3-spatial-folds.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-final-luna-01/workspace/results/spatial/figures/figure_03_outer_fold_maps.png",
+    "sha256": "5f2becc5b6407c876f4f2c1e58e9740df50d8af553a041d133684d0da0a6d253",
+    "role": "Frozen Luna outer200km split; inner4 historical superseded by M4inner3"
+  },
+  "m4-pr-comparison.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v2-pu-qwen-01-recovery-01/workspace/figures/pr_by_method.png",
+    "sha256": "640608223bf751236c6ec29d4db75aceeb08d11c362f48c4bb6987c380c48da4",
+    "role": "Qwen actual bagging PU after no-refit corrective report turn2"
+  },
+  "m4-fold-comparison.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v2-pu-qwen-01-recovery-01/workspace/figures/fold_ap_difference.png",
+    "sha256": "9593b2ef5b55b06a09d16a71658c9980ab2786fd641623a21b3514be4e89971f",
+    "role": "Qwen actual bagging PU after no-refit corrective report turn2"
+  },
+  "m5-calibration.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v3-m5-render-recovery-01/main-verified-render/figures/m5_calibration_diagnostics.png",
+    "sha256": "023c3c32e498dc2a7e66727133aed4055ea259163521c360c271e7907326ea5d",
+    "role": "Main-corrected agent renderer derivative after Qwen timeout; no new fits; reviewed by main and Claude4a3263c1"
+  },
+  "m5-maps.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v3-m5-render-recovery-01/main-verified-render/figures/m5_stability_membership_maps.png",
+    "sha256": "528098c8da8fb0ff1bf7c4b2fae4ad14ea0c6ae0d67f8a34a1217705a2a33b32",
+    "role": "Main-corrected agent renderer derivative after Qwen timeout; no new fits; reviewed by main and Claude4a3263c1"
+  },
+  "m6-full-maps.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v3-zones-qwen-01-recovery-01/main-verified-M6/figures/m6_full_maps.png",
+    "sha256": "b92578f7278bfbd03dd30a262b0dadfefeab2d0a7c2f8a72591d8e3220ab27b9",
+    "role": "Main-corrected figure/report derivative of Qwen timed-out M6 recovery; numerical core unchanged; main+Claudef83baa20 reviewed"
+  },
+  "m6-zoom.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v3-zones-qwen-01-recovery-01/main-verified-M6/figures/m6_zoom.png",
+    "sha256": "9eef99135ec7ddec5f628e03def6e6d809d24fcb296b7cdc95cb1208e283b9ad",
+    "role": "Main-corrected figure/report derivative of Qwen timed-out M6 recovery; numerical core unchanged; main+Claudef83baa20 reviewed"
+  },
+  "m2-direction-sensitivity.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-report-qwen-01/workspace/prior-modules/M2-M3/figures/figure_02_label_direction_sensitivity.png",
+    "sha256": "d2298bab357f06405f048c91d2b42d3087f3ab4a12fb47249dcc408b0ba87a5b",
+    "role": "Frozen Luna spatial artifact; inherited module handoff. Inner4 support is historical, superseded by M4inner3; distances EPSG3577 projected approximation."
+  },
+  "m3-historical-inner4-support.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-report-qwen-01/workspace/prior-modules/M2-M3/figures/figure_04_nested_fold_support.png",
+    "sha256": "d85d5fc8ec27c9a217bd1c4661d31ea6c5755d7f98d11db0982e7737231ee2ce",
+    "role": "Frozen Luna spatial artifact; inherited module handoff. Inner4 support is historical, superseded by M4inner3; distances EPSG3577 projected approximation."
+  },
+  "FINAL-REPORT.md": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-report-qwen-01/main-verified-report/FINAL-REPORT.md",
+    "source_sha256": "cf95ef222d311d95d7f4247145fd37aa2cd53c2735ab77f0e068555151a7c20d",
+    "sha256": "61f62ad410e9af2aa3b70acaa1fafcad0606f26195944f22e5f4e3aab9151f8d",
+    "role": "Main-corrected M7 report accepted by Claudeb036391c; repository image remapping and minor clarity edits; not autonomous Qwen pass; final separate policy-report cross-link"
+  },
+  "m7-tables/candidate_p_proximity.csv": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-report-qwen-01/workspace/results/m7/candidate_p_proximity.csv",
+    "sha256": "3f9e0bf05a70819a45880c9ce216748768c4cfea155e4aa392757bc7bd3bb322",
+    "role": "Qwen-generated M7 table; unchanged; main numerical verification22checks"
+  },
+  "m7-tables/candidate_p_proximity_summary.json": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-report-qwen-01/workspace/results/m7/candidate_p_proximity_summary.json",
+    "sha256": "18c600ac444aa349309063a353a3d4389c1ff0c548af028590a66c94c6c75ee5",
+    "role": "Qwen-generated M7 table; unchanged; main numerical verification22checks"
+  },
+  "m7-tables/rho_sensitivity.csv": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-report-qwen-01/workspace/results/m7/rho_sensitivity.csv",
+    "sha256": "2d638ab7cd71adb8baa2a696498ff3d208da4a9f3cb0c9487a63b068de39ee8d",
+    "role": "Qwen-generated M7 table; unchanged; main numerical verification22checks"
+  },
+  "m7-tables/variable_gain_importance.csv": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-report-qwen-01/workspace/results/m7/variable_gain_importance.csv",
+    "sha256": "b1bf1f58ecc290b9e453c163051e75d984f35e2c2c3eeb8b735dcb8abf5ad09a",
+    "role": "Qwen-generated M7 table; unchanged; main numerical verification22checks"
+  },
+  "m7-tables/variable_permutation_heldout.csv": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-report-qwen-01/workspace/results/m7/variable_permutation_heldout.csv",
+    "sha256": "f379cc8e9a357f840bcd8dfb23b9561d0e0c07f5821f370fc64d4658e7a24547",
+    "role": "Qwen-generated M7 table; unchanged; main numerical verification22checks"
+  },
+  "m6-top5-policy.png": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-policy-qwen-01/main-verified-policy/figures/m6top5_full_compare.png",
+    "sha256": "3a91877d2275b72b87f686458dd50c4e7d67b1802d20b5fa885de207ae408361",
+    "role": "Qwen normal policy turn1 + normal image/prose correction turn2; main separate changed-cell contrast color refinement; raw preserved"
+  },
+  "POLICY-5PCT.md": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-policy-qwen-01/main-verified-policy/M6-TOP5-REPORT.md",
+    "source_sha256": "5295dbb3231e098c44e23ef4ff6d005e185af99ac2a5545cc9d102c96e9fc8b8",
+    "sha256": "72e1043eabf66ff975156bf24ffe4b8e22479f9de0f1a58cdc0a2c6ea1770363",
+    "role": "Reviewed main contrast/prose derivative of normally completed Qwen policy trial; repository image remap/path notice; residual operational-cut wording clarified"
+  },
+  "policy-tables/review_set_compare.csv": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-policy-qwen-01/workspace/results/m6_top5/review_set_compare.csv",
+    "sha256": "5f0e7f603dac1867fafb1c6f9d00d7509740f9e8f95a4f9d7f5c80fc1cff32cd",
+    "role": "Unchanged Qwen policy summary; main64independentchecks and75protectedfilehashes"
+  },
+  "policy-tables/zone_summary_compare.csv": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-policy-qwen-01/workspace/results/m6_top5/zone_summary_compare.csv",
+    "sha256": "c6811d6ddcd5facbdc7d7a576ffe2d8f1eb40efa824c2d2a32f4adb3299031ff",
+    "role": "Unchanged Qwen policy summary; main64independentchecks and75protectedfilehashes"
+  },
+  "policy-tables/zone_transitions_detail.csv": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-policy-qwen-01/workspace/results/m6_top5/zone_transitions_detail.csv",
+    "sha256": "b137dcabf774b218902721fedb2330065321bbd87d69b2cbcbc0c117e076c139",
+    "role": "Unchanged Qwen policy summary; main64independentchecks and75protectedfilehashes"
+  },
+  "policy-tables/zone_transition_matrix.csv": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-policy-qwen-01/workspace/results/m6_top5/zone_transition_matrix.csv",
+    "sha256": "5659c711867a2839379eba5c20fc64066264d6f788001557b9498499d57fb0ff",
+    "role": "Unchanged Qwen policy summary; main64independentchecks and75protectedfilehashes"
+  },
+  "policy-tables/capture_tiers_raw.csv": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-policy-qwen-01/workspace/results/m6_top5/capture_tiers_raw.csv",
+    "sha256": "f20e34753aa884c7ef93e5043ea0a14ec54bd3cb9d3270ed89fbcab34e7ea532",
+    "role": "Unchanged Qwen policy summary; main64independentchecks and75protectedfilehashes"
+  },
+  "policy-tables/zone_by_fold_compare.csv": {
+    "source": "/home/seongin3/.local/state/mpm-evals/r3-v4-policy-qwen-01/workspace/results/m6_top5/zone_by_fold_compare.csv",
+    "sha256": "482da1632b8cbf6274af9d67b9855c881dcca0ed4fd3475dc4b2cdc7a0045199",
+    "role": "Unchanged Qwen policy summary; main64independentchecks and75protectedfilehashes"
+  },
+  "m0-domain-ledger.png": {
+    "source": "web/scripts/m0_example.py on web/datasets/yilgarn/Yilgarn_GIS_DB.csv (deterministic, 2026-09-22)",
+    "sha256": "bcf3cd6c9b220c0375438d7f260c601c4150ca1e33d3cd46879a01bed97fd293",
+    "role": "platform-generated M0 example: domain ledger classes by missing-predictor groups and per-predictor missing profile; no model, no training"
+  },
+  "tables/m0_data_profile.csv": {
+    "source": "web/scripts/m0_example.py on web/datasets/yilgarn/Yilgarn_GIS_DB.csv (deterministic, 2026-09-22)",
+    "sha256": "4347869df33680e3d5594c4b73720f50f18ef28bbe466e2a4c87ce07cb5c9eb1",
+    "role": "platform-generated M0 example: per-predictor missing count/%, range, P/U medians, source grade from DATA-LICENSE.md"
+  }
+}

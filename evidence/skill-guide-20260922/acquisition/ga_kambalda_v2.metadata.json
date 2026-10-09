@@ -1,0 +1,732 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-22T06:00:21+00:00",
+  "project": "ga-kambalda-ni-v2",
+  "grid": {
+    "crs": "EPSG:28351",
+    "cell_size": 1000,
+    "minx": 347000.0,
+    "miny": 6513000.0,
+    "maxx": 396000.0,
+    "maxy": 6570000.0,
+    "x_column": "x_mga51",
+    "y_column": "y_mga51",
+    "ncols": 49,
+    "nrows": 57,
+    "n_cells": 2793,
+    "bounds_requested": [
+      347000.0,
+      6513000.0,
+      396000.0,
+      6570000.0
+    ],
+    "bounds_used": [
+      347000.0,
+      6513000.0,
+      396000.0,
+      6570000.0
+    ],
+    "unit": "metre",
+    "epsg": 28351
+  },
+  "table": {
+    "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/table/ga_kambalda_v2.csv",
+    "sha256": "7d609f960bc3956872b125ef4f05b4408f9d5ac4b8af6dc53319e6b7861d8cbd",
+    "rows": 2793,
+    "columns": [
+      "cell_id",
+      "row",
+      "col",
+      "x_mga51",
+      "y_mga51",
+      "ni_deposit",
+      "tmi_nT",
+      "rtp_nT",
+      "vd1_nT_per_m",
+      "k_pct",
+      "th_ppm",
+      "u_ppm",
+      "dgir_gu",
+      "n_ni_deposit_points",
+      "in_aoi"
+    ]
+  },
+  "columns": {
+    "tmi_nT": {
+      "definition": "Total magnetic intensity, GA magmap v7 2019 (documented: eCat 131505); cell mean of ~80 m pixels",
+      "unit": "nT",
+      "type": "raster",
+      "role": "predictor",
+      "source": "tmi",
+      "source_files": [
+        "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/tmi.tif"
+      ],
+      "source_sha256": "5c108a3ded7d69a327e21f82f9c185a4a969b2d3d379223dc9128efca72b9276",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "record": {
+        "catalogue": "eCat",
+        "eCatId": "131505",
+        "title": "Total Magnetic Intensity (TMI) Grid of Australia 2019 - seventh edition (80 m)",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "sampling": {
+        "source": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/tmi.tif",
+        "band": 1,
+        "method": "mean",
+        "resampling": "average",
+        "source_crs": "EPSG:4283",
+        "source_res": [
+          0.0008333,
+          0.0008333
+        ],
+        "source_nodata": -99999.0,
+        "file_nodata": -99999.0,
+        "caller_nodata": null,
+        "nodata_note": "file nodata used",
+        "source_dtype": "float32",
+        "missing_fraction": 0.0,
+        "min": -393.8189733117909,
+        "max": 1161.5210038323285
+      }
+    },
+    "rtp_nT": {
+      "definition": "TMI variable reduction to pole, magmap v7 2019 (eCat 131519)",
+      "unit": "nT",
+      "type": "raster",
+      "role": "predictor",
+      "source": "rtp",
+      "source_files": [
+        "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/rtp.tif"
+      ],
+      "source_sha256": "8ba371ae7d39e1f37b6a590176e972588de71ada26282fdf32be0467386e9c6c",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "record": {
+        "catalogue": "eCat",
+        "eCatId": "131519",
+        "title": "TMI Grid of Australia 2019 - VRTP",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "sampling": {
+        "source": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/rtp.tif",
+        "band": 1,
+        "method": "mean",
+        "resampling": "average",
+        "source_crs": "EPSG:4283",
+        "source_res": [
+          0.0008333,
+          0.0008333
+        ],
+        "source_nodata": -99999.0,
+        "file_nodata": -99999.0,
+        "caller_nodata": null,
+        "nodata_note": "file nodata used",
+        "source_dtype": "float32",
+        "missing_fraction": 0.0,
+        "min": -437.7461908871538,
+        "max": 1521.21117967009
+      }
+    },
+    "vd1_nT_per_m": {
+      "definition": "TMI first vertical derivative, magmap v7 2019",
+      "unit": "nT/m (inferred; confirm in eCat 132275)",
+      "type": "raster",
+      "role": "predictor",
+      "source": "vd1",
+      "source_files": [
+        "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/vd1.tif"
+      ],
+      "source_sha256": "8c94421c7c0bcf36fcd4c351835b4e1e5583cac5846c778ef9555609b5e677d7",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "record": {
+        "catalogue": "eCat",
+        "eCatId": "132275",
+        "title": "TMI Grid of Australia 2019 - first vertical derivative",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "sampling": {
+        "source": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/vd1.tif",
+        "band": 1,
+        "method": "mean",
+        "resampling": "average",
+        "source_crs": "EPSG:4283",
+        "source_res": [
+          0.0008333,
+          0.0008333
+        ],
+        "source_nodata": -99999.0,
+        "file_nodata": -99999.0,
+        "caller_nodata": null,
+        "nodata_note": "file nodata used",
+        "source_dtype": "float32",
+        "missing_fraction": 0.0,
+        "min": -1.383597078061585,
+        "max": 2.1522982844025234
+      }
+    },
+    "k_pct": {
+      "definition": "Radmap v4 2019 filtered potassium concentration",
+      "unit": "%",
+      "type": "raster",
+      "role": "predictor",
+      "source": "k_pct",
+      "source_files": [
+        "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/k_pct.tif"
+      ],
+      "source_sha256": "82dd063ce1f88acffedcb8bfb7a668cb84bdae62fe850a2b9755ccbe7921670b",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "record": {
+        "catalogue": "eCat",
+        "eCatId": null,
+        "title": "Radiometric Grid of Australia v4 2019 - filtered pct potassium",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "sampling": {
+        "source": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/k_pct.tif",
+        "band": 1,
+        "method": "mean",
+        "resampling": "average",
+        "source_crs": "EPSG:4283",
+        "source_res": [
+          0.001,
+          0.001
+        ],
+        "source_nodata": -99999.0,
+        "file_nodata": -99999.0,
+        "caller_nodata": null,
+        "nodata_note": "file nodata used",
+        "source_dtype": "float32",
+        "missing_fraction": 0.0,
+        "min": 0.00836275715691894,
+        "max": 3.3221108278383906
+      }
+    },
+    "th_ppm": {
+      "definition": "Radmap v4 2019 filtered thorium (eCat 131967)",
+      "unit": "ppm",
+      "type": "raster",
+      "role": "predictor",
+      "source": "th_ppm",
+      "source_files": [
+        "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/th_ppm.tif"
+      ],
+      "source_sha256": "f97406219b5590dacd0ecd1667fbb4d90cd7d5015a1a1d4f0a8d267097822126",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "record": {
+        "catalogue": "eCat",
+        "eCatId": "131967",
+        "title": "Radiometric Grid of Australia v4 2019 - filtered ppm thorium",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "sampling": {
+        "source": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/th_ppm.tif",
+        "band": 1,
+        "method": "mean",
+        "resampling": "average",
+        "source_crs": "EPSG:4283",
+        "source_res": [
+          0.001,
+          0.001
+        ],
+        "source_nodata": -99999.0,
+        "file_nodata": -99999.0,
+        "caller_nodata": null,
+        "nodata_note": "file nodata used",
+        "source_dtype": "float32",
+        "missing_fraction": 0.0,
+        "min": 0.5128068905812522,
+        "max": 45.17533305060211
+      }
+    },
+    "u_ppm": {
+      "definition": "Radmap v4 2019 filtered uranium (eCat 131974)",
+      "unit": "ppm",
+      "type": "raster",
+      "role": "predictor",
+      "source": "u_ppm",
+      "source_files": [
+        "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/u_ppm.tif"
+      ],
+      "source_sha256": "b35297819873654de3def4de39dc05c145894450385fed820b0f9f3e1cd8531c",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "record": {
+        "catalogue": "eCat",
+        "eCatId": "131974",
+        "title": "Radiometric Grid of Australia v4 2019 - filtered ppm uranium",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "sampling": {
+        "source": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/u_ppm.tif",
+        "band": 1,
+        "method": "mean",
+        "resampling": "average",
+        "source_crs": "EPSG:4283",
+        "source_res": [
+          0.001,
+          0.001
+        ],
+        "source_nodata": -99999.0,
+        "file_nodata": -99999.0,
+        "caller_nodata": null,
+        "nodata_note": "file nodata used",
+        "source_dtype": "float32",
+        "missing_fraction": 0.0,
+        "min": 0.6650155413234223,
+        "max": 4.847521052217714
+      }
+    },
+    "dgir_gu": {
+      "definition": "De-trended global isostatic residual gravity 2019 (eCat 144778); unit gu = µm/s² per eCat abstract (1 mGal = 10 gu)",
+      "unit": "gu (µm/s²)",
+      "type": "raster",
+      "role": "predictor",
+      "source": "dgir",
+      "source_files": [
+        "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/dgir.tif"
+      ],
+      "source_sha256": "ab26116e0ce0a3f1f7832839aa6c926d10e856efd15fa7fc22afddd2ef0f692d",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "record": {
+        "catalogue": "eCat",
+        "eCatId": "144778",
+        "title": "National Gravity Compilation 2019 DGIR grid",
+        "unit_evidence": "eCat 144778 abstract: 'units of um/s^2, also known as gravity units, or gu' (verified 2026-09-22 via ecat _search)"
+      },
+      "sampling": {
+        "source": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/dgir.tif",
+        "band": 1,
+        "method": "mean",
+        "resampling": "average",
+        "source_crs": "EPSG:4283",
+        "source_res": [
+          0.004166666666666667,
+          0.004166666666666667
+        ],
+        "source_nodata": -999999.0,
+        "file_nodata": -999999.0,
+        "caller_nodata": null,
+        "nodata_note": "file nodata used",
+        "source_dtype": "float32",
+        "missing_fraction": 0.0,
+        "min": -280.7930537467834,
+        "max": 57.33631275892347
+      }
+    }
+  },
+  "label": {
+    "positive_definition": "cell contains >=1 point (no buffer)",
+    "n_points_total": 35,
+    "n_points_outside_grid": 0,
+    "n_positive_cells": 28,
+    "unlabeled_is_verified_negative": false,
+    "source": "deposits",
+    "filter": {
+      "property": "COMMODITY_CODES",
+      "regex": "(?<![A-Za-z])Ni(?![a-z])"
+    },
+    "n_features_total": 105,
+    "source_sha256": "b6283353cfac9de751b0764c9186e2f2ca8ac43b1a02a2c9fe31079ef748ed7f",
+    "n_features_after_filter": 35,
+    "licence": {
+      "name": "CC BY 4.0",
+      "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+      "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+      "verified": true,
+      "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+    },
+    "record": {
+      "catalogue": "eCat",
+      "eCatId": "144672",
+      "title": "Mineral Deposits and Mineral Resources WFS (OZMIN-derived)",
+      "extract_date": "2026-09-22"
+    }
+  },
+  "unlabeled_semantics": "0 = unlabeled (no recorded positive in this catalogue extract); not a verified negative",
+  "validation": {
+    "errors": [],
+    "warnings": [],
+    "summary": {
+      "rows": 2793,
+      "n_features": 7,
+      "n_positive": 28,
+      "positive_rate": 0.010025062656641603,
+      "missing_fraction": {
+        "tmi_nT": 0.0,
+        "rtp_nT": 0.0,
+        "vd1_nT_per_m": 0.0,
+        "k_pct": 0.0,
+        "th_ppm": 0.0,
+        "u_ppm": 0.0,
+        "dgir_gu": 0.0
+      }
+    },
+    "ok": true
+  },
+  "provenance": [
+    {
+      "schema_version": 1,
+      "url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__magmap_v7_2019_TMI&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "final_url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__magmap_v7_2019_TMI&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "http_status": 200,
+      "content_type": "image/tiff",
+      "bytes": 4194957,
+      "sha256": "5c108a3ded7d69a327e21f82f9c185a4a969b2d3d379223dc9128efca72b9276",
+      "retrieved_at": "2026-09-22T05:59:34+00:00",
+      "user_agent": "mpm-data-acquisition/0.1 (+research; see repository README)",
+      "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/tmi.tif",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "source": {
+        "catalogue": "eCat",
+        "eCatId": "131505",
+        "title": "Total Magnetic Intensity (TMI) Grid of Australia 2019 - seventh edition (80 m)",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "request_signature": "dfdbf465f2d2eadd29d565ea313dcfe8735ebab2766f91bc4217ab996dbc21e9"
+    },
+    {
+      "schema_version": 1,
+      "url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__magmap_v7_2019_RTP&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "final_url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__magmap_v7_2019_RTP&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "http_status": 200,
+      "content_type": "image/tiff",
+      "bytes": 4194957,
+      "sha256": "8ba371ae7d39e1f37b6a590176e972588de71ada26282fdf32be0467386e9c6c",
+      "retrieved_at": "2026-09-22T05:59:39+00:00",
+      "user_agent": "mpm-data-acquisition/0.1 (+research; see repository README)",
+      "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/rtp.tif",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "source": {
+        "catalogue": "eCat",
+        "eCatId": "131519",
+        "title": "TMI Grid of Australia 2019 - VRTP",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "request_signature": "1d8eb99e863f5d64eca6b5bab9c1474c6155d9493c137d6db08ae884b0993794"
+    },
+    {
+      "schema_version": 1,
+      "url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__magmap_v7_2019_1VD&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "final_url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__magmap_v7_2019_1VD&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "http_status": 200,
+      "content_type": "image/tiff",
+      "bytes": 4194957,
+      "sha256": "8c94421c7c0bcf36fcd4c351835b4e1e5583cac5846c778ef9555609b5e677d7",
+      "retrieved_at": "2026-09-22T05:59:43+00:00",
+      "user_agent": "mpm-data-acquisition/0.1 (+research; see repository README)",
+      "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/vd1.tif",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "source": {
+        "catalogue": "eCat",
+        "eCatId": "132275",
+        "title": "TMI Grid of Australia 2019 - first vertical derivative",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "request_signature": "51c9764b2106a9c03d5877a899649dddfac6f345b9ed4af8fe6c75b6369710e4"
+    },
+    {
+      "schema_version": 1,
+      "url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__radmap_v4_2019_filtered_pctk&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "final_url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__radmap_v4_2019_filtered_pctk&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "http_status": 200,
+      "content_type": "image/tiff",
+      "bytes": 4194957,
+      "sha256": "82dd063ce1f88acffedcb8bfb7a668cb84bdae62fe850a2b9755ccbe7921670b",
+      "retrieved_at": "2026-09-22T05:59:47+00:00",
+      "user_agent": "mpm-data-acquisition/0.1 (+research; see repository README)",
+      "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/k_pct.tif",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "source": {
+        "catalogue": "eCat",
+        "eCatId": null,
+        "title": "Radiometric Grid of Australia v4 2019 - filtered pct potassium",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "request_signature": "ff7ff2ffce81d0882dfa5ad5528dc8149fcff4ad4bd9d7fc0c4622b680106b4c"
+    },
+    {
+      "schema_version": 1,
+      "url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__radmap_v4_2019_filtered_ppmth&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "final_url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__radmap_v4_2019_filtered_ppmth&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "http_status": 200,
+      "content_type": "image/tiff",
+      "bytes": 4194957,
+      "sha256": "f97406219b5590dacd0ecd1667fbb4d90cd7d5015a1a1d4f0a8d267097822126",
+      "retrieved_at": "2026-09-22T05:59:50+00:00",
+      "user_agent": "mpm-data-acquisition/0.1 (+research; see repository README)",
+      "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/th_ppm.tif",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "source": {
+        "catalogue": "eCat",
+        "eCatId": "131967",
+        "title": "Radiometric Grid of Australia v4 2019 - filtered ppm thorium",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "request_signature": "88153d1ce8606ea963c2d7496d08d145b7a87d3b1ebb129cd48d7473025ed698"
+    },
+    {
+      "schema_version": 1,
+      "url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__radmap_v4_2019_filtered_ppmu&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "final_url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__radmap_v4_2019_filtered_ppmu&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "http_status": 200,
+      "content_type": "image/tiff",
+      "bytes": 4194957,
+      "sha256": "b35297819873654de3def4de39dc05c145894450385fed820b0f9f3e1cd8531c",
+      "retrieved_at": "2026-09-22T05:59:54+00:00",
+      "user_agent": "mpm-data-acquisition/0.1 (+research; see repository README)",
+      "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/u_ppm.tif",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "source": {
+        "catalogue": "eCat",
+        "eCatId": "131974",
+        "title": "Radiometric Grid of Australia v4 2019 - filtered ppm uranium",
+        "service": "GA National Geophysical Grids WCS 2.0.1"
+      },
+      "request_signature": "07656e9e683778ea93459bf824c6a69c3eaa84aa9021957cb37cd6a9d22b7353"
+    },
+    {
+      "schema_version": 1,
+      "url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__Gravmap2019-grid-grv_dtgir&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "final_url": "https://services.ga.gov.au/gis/geophysical-grids/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=geophys__Gravmap2019-grid-grv_dtgir&subset=Long(121.38000000000001,121.92)&subset=Lat(-31.52,-30.98)&format=image/tiff",
+      "http_status": 200,
+      "content_type": "image/tiff",
+      "bytes": 262798,
+      "sha256": "ab26116e0ce0a3f1f7832839aa6c926d10e856efd15fa7fc22afddd2ef0f692d",
+      "retrieved_at": "2026-09-22T05:59:56+00:00",
+      "user_agent": "mpm-data-acquisition/0.1 (+research; see repository README)",
+      "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/dgir.tif",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "source": {
+        "catalogue": "eCat",
+        "eCatId": "144778",
+        "title": "National Gravity Compilation 2019 DGIR grid",
+        "unit_evidence": "eCat 144778 abstract: 'units of um/s^2, also known as gravity units, or gu' (verified 2026-09-22 via ecat _search)"
+      },
+      "request_signature": "b7ce2d04e54b13754e3ab8e97c693a84a1102085525e9971ec45b750e20b3ba5"
+    },
+    {
+      "schema_version": 1,
+      "url": "https://services.ga.gov.au/gis/earthresource/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ama%3AMineralDeposits&outputFormat=application/json&bbox=-31.5,121.4,-31.0,121.9,urn:ogc:def:crs:EPSG::4283&count=1000&startIndex=0",
+      "final_url": "https://services.ga.gov.au/gis/earthresource/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ama%3AMineralDeposits&outputFormat=application/json&bbox=-31.5,121.4,-31.0,121.9,urn:ogc:def:crs:EPSG::4283&count=1000&startIndex=0",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 74150,
+      "sha256": "01021856458d82cee2f5857086637d3f2b4504a684ccb141df518adb22f6da18",
+      "retrieved_at": "2026-09-22T05:59:58+00:00",
+      "user_agent": "mpm-data-acquisition/0.1 (+research; see repository README)",
+      "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/deposits/page_000000.geojson",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "source": {
+        "catalogue": "eCat",
+        "eCatId": "144672",
+        "title": "Mineral Deposits and Mineral Resources WFS (OZMIN-derived)",
+        "extract_date": "2026-09-22"
+      },
+      "request_signature": "a1e1df1a3a63e64d51bc02a43e54353cf09e73dc6d4ad276e02b817de905999c:page:0"
+    },
+    {
+      "merged_from_pages": [
+        "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/deposits/page_000000.geojson"
+      ],
+      "sha256": "b6283353cfac9de751b0764c9186e2f2ca8ac43b1a02a2c9fe31079ef748ed7f",
+      "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/raw/deposits.geojson",
+      "page_sha256": [
+        "01021856458d82cee2f5857086637d3f2b4504a684ccb141df518adb22f6da18"
+      ],
+      "n_features": 105,
+      "numberMatched": 105,
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "statement": "© Commonwealth of Australia (Geoscience Australia) 2022. This product is released under the Creative Commons Attribution 4.0 International Licence.",
+        "verified": true,
+        "verified_where": "WCS/WFS GetCapabilities AccessConstraints, 2026-09-22"
+      },
+      "source": {
+        "catalogue": "eCat",
+        "eCatId": "144672",
+        "title": "Mineral Deposits and Mineral Resources WFS (OZMIN-derived)",
+        "extract_date": "2026-09-22"
+      },
+      "retrieved_at": "2026-09-22T05:59:58+00:00",
+      "request_signature": "a1e1df1a3a63e64d51bc02a43e54353cf09e73dc6d4ad276e02b817de905999c"
+    }
+  ],
+  "notes": [
+    "v2 (2026-09-22, after the A/B review): exact AOI mask (in_aoi), aoi_centre handoff table, feature roles, gravity unit corrected to gu (µm/s^2) per eCat 144778, requirements.min_features=5. Functional test on a small Kambalda AOI; not a study design.",
+    "WCS coverages resampled from ~80 m / 435 m (EPSG:4283) to 1 km MGA zone 51 cells by GDAL average; nodata read from the GeoTIFF tags (magnetics/radiometrics -99999, DGIR -999999)."
+  ],
+  "aoi_wgs84": [
+    121.4,
+    -31.5,
+    121.9,
+    -31.0
+  ],
+  "domain": {
+    "mask_column": "in_aoi",
+    "method": "cell centre inverse-projected to AOI CRS; inclusive bbox comparison",
+    "aoi_crs": "EPSG:4326",
+    "aoi": {
+      "type": "bbox",
+      "bounds": [
+        121.4,
+        -31.5,
+        121.9,
+        -31.0
+      ]
+    },
+    "n_cells": 2793,
+    "n_inside": 2639,
+    "n_outside": 154,
+    "positives_inside": 28,
+    "positives_outside": 0,
+    "handoff_policy": "aoi_centre",
+    "m0_note": "Rows outside the AOI keep predictor values but were not label-queried; treat them as outside the study domain, not as unlabeled cells. M0 decides centre-inclusion vs keeping boundary cells that contain in-AOI positives vs parent-grid flag; the full grid and in_aoi are preserved for that choice.",
+    "handoff_table": {
+      "path": "/home/user/geoscience-mpm-workflow/runs/acq-ga-kambalda-v2/table/ga_kambalda_v2.mpm-input.csv",
+      "sha256": "6f6964f115972d6584214548d2a7d76d5a3523499ee92176a6781aa499002365",
+      "rows": 2639,
+      "columns": [
+        "cell_id",
+        "row",
+        "col",
+        "x_mga51",
+        "y_mga51",
+        "ni_deposit",
+        "tmi_nT",
+        "rtp_nT",
+        "vd1_nT_per_m",
+        "k_pct",
+        "th_ppm",
+        "u_ppm",
+        "dgir_gu",
+        "n_ni_deposit_points",
+        "in_aoi"
+      ],
+      "rows_excluded": 154,
+      "positives_excluded": 0,
+      "validation": {
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "rows": 2639,
+          "n_features": 7,
+          "n_positive": 28,
+          "positive_rate": 0.010610079575596816,
+          "missing_fraction": {
+            "tmi_nT": 0.0,
+            "rtp_nT": 0.0,
+            "vd1_nT_per_m": 0.0,
+            "k_pct": 0.0,
+            "th_ppm": 0.0,
+            "u_ppm": 0.0,
+            "dgir_gu": 0.0
+          }
+        },
+        "ok": true
+      }
+    }
+  },
+  "dropped_features": [],
+  "diagnostic_columns": {},
+  "auxiliary_columns": {
+    "n_ni_deposit_points": {
+      "role": "label_derived_count",
+      "use_as_predictor": false,
+      "definition": "Count used for the P/U label; exclude from predictor selection (target leakage)."
+    },
+    "in_aoi": {
+      "role": "domain_mask",
+      "use_as_predictor": false,
+      "definition": "1 if the cell centre lies inside the requested AOI (cell centre inverse-projected to AOI CRS; inclusive bbox comparison); 0 otherwise."
+    }
+  }
+}

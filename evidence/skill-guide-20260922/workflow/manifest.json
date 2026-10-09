@@ -1,0 +1,216 @@
+{
+  "status": "complete",
+  "started_at": "2026-09-22T05:44:25.542311+00:00",
+  "finished_at": "2026-09-22T05:47:06.780647+00:00",
+  "code_commit": "9331649c857301276c05f202b8572ffdf6a348e3",
+  "script_sha256": "3e262b7cc006fd277cd02469e8a29aeeac753ba8192630cb421946b72fb0ab98",
+  "config_sha256": "470f3012a1de47097c638d11724ed8852eabbe65cb75ac815e39d78da16851b0",
+  "data_sha256": "49b7855efb95a59590c80fb2e1e818bacbd02dfaecc9cde7d0eeab05335af151",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.11.2"
+  },
+  "configuration": {
+    "seed": 20260922,
+    "expected_sha256": "49b7855efb95a59590c80fb2e1e818bacbd02dfaecc9cde7d0eeab05335af151",
+    "cell_size_m": 40000,
+    "spatial_block_cells": 4,
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "role_partition_folds": 4,
+    "bootstrap_replicates": 50,
+    "pu_bags": 8,
+    "pu_unlabeled_fraction": 0.35,
+    "xgb_threads": 2,
+    "permutation_repeats": 3,
+    "alpha": 0.15,
+    "delta_diagnostic": 0.05,
+    "rho_mean_floor": 0.0001,
+    "rho_cuts": [
+      0.15,
+      0.3,
+      0.5
+    ],
+    "budgets": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "candidates": [
+      {
+        "max_depth": 2,
+        "n_estimators": 64,
+        "learning_rate": 0.05
+      },
+      {
+        "max_depth": 2,
+        "n_estimators": 128,
+        "learning_rate": 0.05
+      },
+      {
+        "max_depth": 3,
+        "n_estimators": 64,
+        "learning_rate": 0.05
+      },
+      {
+        "max_depth": 3,
+        "n_estimators": 128,
+        "learning_rate": 0.05
+      },
+      {
+        "max_depth": 4,
+        "n_estimators": 64,
+        "learning_rate": 0.05
+      },
+      {
+        "max_depth": 4,
+        "n_estimators": 128,
+        "learning_rate": 0.05
+      }
+    ]
+  },
+  "limitations": [
+    "40 km aggregated review data; not a 5 km study reproduction or deployment model.",
+    "U is unlabeled, not a verified negative. AP/Brier/Platt describe recorded P versus U.",
+    "160 km grouped folds are an explicit design candidate, not a validated decorrelation range; no buffer.",
+    "Grouped interpolation evaluation is not a held-out new-region transfer experiment.",
+    "Previous exploratory M0/M1 used all labels; this is exploratory, not confirmatory evidence.",
+    "Positive-class split-conformal uses held-out calibration; spatial exchangeability and population-positive representativeness are unverified.",
+    "No exact spatial coverage guarantee, no negative-class membership, no discovery probability.",
+    "Bootstrap holds selected parameters fixed; dispersion excludes model-selection/data/label uncertainty.",
+    "Raw bootstrap rho is conditional model-score dispersion, not total uncertainty or cross-method superiority.",
+    "Maps are outer OOF mosaics with fold-specific fits; fold seams are not geological boundaries.",
+    "Budgets are block-count shares, not ground-area shares; partial edge cells have different support.",
+    "Permutation importance is descriptive outer-held-out AP drop and is not used for feature selection."
+  ],
+  "files": {
+    "best_params_baggingpu.json": {
+      "sha256": "b5e4ac2969cb974cf0ba90f22a812f4e6df4c3241af369e9b2de0a28feb31196",
+      "bytes": 1105
+    },
+    "best_params_xgboost.json": {
+      "sha256": "48292d5a58b52f281444890e37b4317c19123160a0e89863372be90eff75eaf5",
+      "bytes": 1104
+    },
+    "bootstrap_matrix.npz": {
+      "sha256": "3362497f06084aa3471ec680d3e96e00ccb1a1eeebc55fd4de7fa2cffe49a589",
+      "bytes": 463004
+    },
+    "calibration_pool.csv": {
+      "sha256": "b9ac249db81a53cecb017250cf4306830021e1ccfff676daee8c94e50d2618ca",
+      "bytes": 263090
+    },
+    "configuration.json": {
+      "sha256": "5dbe3db5b2de1929dd3e248977eac1ff66438aaa7bc6973e6d8a8252bd13ec01",
+      "bytes": 1088
+    },
+    "conformal_membership.csv": {
+      "sha256": "51d12d3a66adf47d2febdb6b6426e23bb720853a151435512370c90b67a7c599",
+      "bytes": 709696
+    },
+    "coverage_by_fold.csv": {
+      "sha256": "2e84e7047e8b21dedaac32afac7f2d7d96c1ecf4a6ae997668701c316b0954db",
+      "bytes": 2407
+    },
+    "execution_audit.json": {
+      "sha256": "a0010cd8162eac90d67d2224e2fe7c2e8948702fd9ae25484da81a45c4465d2b",
+      "bytes": 2859
+    },
+    "feature_contract.json": {
+      "sha256": "863285bbd06fc17af15408af542e4811dfcbddc8176e76b64624bcd6d9f21f4b",
+      "bytes": 3376
+    },
+    "m2_block_candidates.csv": {
+      "sha256": "f293cde731674acb147feb60ed246b2d874dae63c51eddc728ef8c208e8c8c11",
+      "bytes": 1370
+    },
+    "m2_variogram.csv": {
+      "sha256": "b83fb77d33cf2f916aaf2aabb451a608f38de5b39d0aadc3b9440e3c28eea164",
+      "bytes": 9993
+    },
+    "m3_fold_summary.csv": {
+      "sha256": "a608ff9222d7f05ff418c4849ac36503f35f93523c68cc561cf5b35a7b8bf306",
+      "bytes": 675
+    },
+    "m3_split_manifest.csv": {
+      "sha256": "bc395eddaad6f2305857a1d153596f340279ecc0cf0d85db29c9a11a91cf0bf1",
+      "bytes": 152666
+    },
+    "m4_pr_comparison.png": {
+      "sha256": "a117b81a5016c5262c820218404f9bc28b670a6d19a8812594f88462a587f182",
+      "bytes": 83883
+    },
+    "m4_reference_baselines.csv": {
+      "sha256": "8d4172256bac77ec1d79b1653f8590c4a8284f1ede21e5172aee7097aee3b5d8",
+      "bytes": 417
+    },
+    "m5_calibration.png": {
+      "sha256": "a8566888ba7b33fb236a7a8166ff16907c4a4f3955021ca302dadfc5df438025",
+      "bytes": 120916
+    },
+    "m6_full_maps_baggingpu.png": {
+      "sha256": "77c058cfc81d206f896f062239ff14b159640ca16ce31497a46ef211949b9a65",
+      "bytes": 181897
+    },
+    "m6_full_maps_xgboost.png": {
+      "sha256": "e2368874ebf5e0fa7debd5e5a25d3728dd200a20ccf6f54b29513795fb5e5de1",
+      "bytes": 182648
+    },
+    "m6_map_values_baggingpu.csv": {
+      "sha256": "ba5828e0403fa8c1afd678ef02955df52e813ccc3c16794aed9ab9912d07230a",
+      "bytes": 357604
+    },
+    "m6_map_values_xgboost.csv": {
+      "sha256": "4685f6c226455486cc4e0321d6504ed18aacbb1d3bccfe70b79f1d157db65393",
+      "bytes": 356814
+    },
+    "m6_zone_summary_baggingpu.csv": {
+      "sha256": "22e4f59c7d11994da2c39f90219cc49eb334270a2f6afe9f1df3a21ec5aa1c6c",
+      "bytes": 57
+    },
+    "m6_zone_summary_xgboost.csv": {
+      "sha256": "8c6444771cb67a85168c364e8c8fc5b9e654660d5897e120072f37975d0fb708",
+      "bytes": 57
+    },
+    "m7_heldout_importance.png": {
+      "sha256": "d599a35457616a8ff0ece8a4d5f9efe5bf48618e60515026b15347cb8e9a52d6",
+      "bytes": 105113
+    },
+    "m7_sensitivity.csv": {
+      "sha256": "e03a5d3815c1a534a3cb92b7fad700510fcb27de051f4547f4a32ceac7f5f28c",
+      "bytes": 2641
+    },
+    "oof_scores.csv": {
+      "sha256": "ea5b752a610457497174e4538f0ac723c04008b649f51f01a0bdb0b1ee91d168",
+      "bytes": 283938
+    },
+    "pooled_metrics.csv": {
+      "sha256": "641dbe820a9aca7ab02f655c1eed2db9fdef2be3c226a88458849fd25a2ff738",
+      "bytes": 316
+    },
+    "progress.json": {
+      "sha256": "2b118088b6499f6bd30d2a6928059c0a59ee8f8e7840b2dee75a2094943f96bc",
+      "bytes": 3197
+    },
+    "stability_rho.csv": {
+      "sha256": "e9d8574683178d0d99548f7842e384597ccdd06992b0c2ed391865921d2b2b69",
+      "bytes": 412916
+    },
+    "tuning_trials.csv": {
+      "sha256": "333ac0e41c5caabfc3c792067dfae2cf6460a66ed2e0d75d8b1e3d8579f972c7",
+      "bytes": 9553
+    },
+    "variable_gain_importance.csv": {
+      "sha256": "274ff78759d23988cb28a3177cedc4ed593dfc40099a3bdc312243393795d0ad",
+      "bytes": 28343
+    },
+    "variable_permutation_heldout.csv": {
+      "sha256": "8fc68c372a23872197edce4d9af1f4bd905ecde39b273c0da2d7b3568e6cd9af",
+      "bytes": 127585
+    }
+  }
+}
