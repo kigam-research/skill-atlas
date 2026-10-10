@@ -1,0 +1,1403 @@
+{
+  "depth": {
+    "direction": "increasing",
+    "median_signed_step": 0.15200000000004366,
+    "median_absolute_step": 0.15200000000004366,
+    "first": 80.15,
+    "last": 2532.062,
+    "nonfinite": 0,
+    "duplicate": 0,
+    "reversals": 0,
+    "step_changes": 0,
+    "gaps": 0,
+    "tolerance": 0.001,
+    "start_residual": 0.0,
+    "stop_residual": -0.11280470000019704,
+    "step_residual": 4.365952044338428e-14,
+    "header": {
+      "STRT": 80.15,
+      "STOP": 2532.1748047,
+      "STEP": 0.152
+    }
+  },
+  "duplicates": [],
+  "inventory": [
+    {
+      "mnemonic": "DEPT",
+      "original_mnemonic": "DEPT",
+      "unit": "m",
+      "effective_unit": "m",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 16132,
+      "null_fraction": 0.0,
+      "first_valid_depth": 80.15,
+      "last_valid_depth": 2532.062,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "FORCE_2020_LITHOFACIES_CONFIDENCE",
+      "original_mnemonic": "FORCE_2020_LITHOFACIES_CONFIDENCE",
+      "unit": "_",
+      "effective_unit": "_",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 16110,
+      "null_fraction": 0.0013637490701710886,
+      "first_valid_depth": 80.15,
+      "last_valid_depth": 2528.87,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "FORCE_2020_LITHOFACIES_LITHOLOGY",
+      "original_mnemonic": "FORCE_2020_LITHOFACIES_LITHOLOGY",
+      "unit": "_",
+      "effective_unit": "_",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 16111,
+      "null_fraction": 0.0013017604760724028,
+      "first_valid_depth": 80.15,
+      "last_valid_depth": 2528.87,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "CALI",
+      "original_mnemonic": "CALI",
+      "unit": "in",
+      "effective_unit": "in",
+      "unit_override": false,
+      "family": "CALI",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 9808,
+      "null_fraction": 0.3920158690800893,
+      "first_valid_depth": 1036.078,
+      "last_valid_depth": 2526.742,
+      "screening_unit": "in",
+      "range_screen": "assessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "BS",
+      "original_mnemonic": "BS",
+      "unit": "in",
+      "effective_unit": "in",
+      "unit_override": false,
+      "family": "BS",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 15764,
+      "null_fraction": 0.02281180262831639,
+      "first_valid_depth": 136.086,
+      "last_valid_depth": 2532.062,
+      "screening_unit": "in",
+      "range_screen": "assessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "MUDWEIGHT",
+      "original_mnemonic": "MUDWEIGHT",
+      "unit": "_",
+      "effective_unit": "_",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 9704,
+      "null_fraction": 0.3984626828663526,
+      "first_valid_depth": 1050.062,
+      "last_valid_depth": 2524.918,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "ROP",
+      "original_mnemonic": "ROP",
+      "unit": "m/h",
+      "effective_unit": "m/h",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 15674,
+      "null_fraction": 0.028390776097198117,
+      "first_valid_depth": 137.15,
+      "last_valid_depth": 2524.918,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "RDEP",
+      "original_mnemonic": "RDEP",
+      "unit": "ohm.m",
+      "effective_unit": "ohm.m",
+      "unit_override": false,
+      "family": "RES",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 15744,
+      "null_fraction": 0.024051574510290108,
+      "first_valid_depth": 136.086,
+      "last_valid_depth": 2529.022,
+      "screening_unit": "ohm.m",
+      "range_screen": "assessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "RSHA",
+      "original_mnemonic": "RSHA",
+      "unit": "ohm.m",
+      "effective_unit": "ohm.m",
+      "unit_override": false,
+      "family": "RES",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 9435,
+      "null_fraction": 0.4151376146788991,
+      "first_valid_depth": 1035.166,
+      "last_valid_depth": 2520.814,
+      "screening_unit": "ohm.m",
+      "range_screen": "assessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "RMED",
+      "original_mnemonic": "RMED",
+      "unit": "ohm.m",
+      "effective_unit": "ohm.m",
+      "unit_override": false,
+      "family": "RES",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 11481,
+      "null_fraction": 0.2883089511529878,
+      "first_valid_depth": 136.086,
+      "last_valid_depth": 2529.022,
+      "screening_unit": "ohm.m",
+      "range_screen": "assessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "RXO",
+      "original_mnemonic": "RXO",
+      "unit": "ohm.m",
+      "effective_unit": "ohm.m",
+      "unit_override": false,
+      "family": "RES",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 9774,
+      "null_fraction": 0.3941234812794446,
+      "first_valid_depth": 1035.166,
+      "last_valid_depth": 2520.662,
+      "screening_unit": "ohm.m",
+      "range_screen": "assessed",
+      "range_flags": 7,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "RMIC",
+      "original_mnemonic": "RMIC",
+      "unit": "ohm.m",
+      "effective_unit": "ohm.m",
+      "unit_override": false,
+      "family": "RES",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 9651,
+      "null_fraction": 0.40174807835358295,
+      "first_valid_depth": 1044.286,
+      "last_valid_depth": 2526.59,
+      "screening_unit": "ohm.m",
+      "range_screen": "assessed",
+      "range_flags": 0,
+      "spike_candidates": 11
+    },
+    {
+      "mnemonic": "SP",
+      "original_mnemonic": "SP",
+      "unit": "mV",
+      "effective_unit": "mV",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 5775,
+      "null_fraction": 0.6420158690800892,
+      "first_valid_depth": 1044.286,
+      "last_valid_depth": 1921.934,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "DTC",
+      "original_mnemonic": "DTC",
+      "unit": "us/ft",
+      "effective_unit": "us/ft",
+      "unit_override": false,
+      "family": "DT",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 4174,
+      "null_fraction": 0.7412596082320853,
+      "first_valid_depth": 1881.198,
+      "last_valid_depth": 2515.494,
+      "screening_unit": "us/ft",
+      "range_screen": "assessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "NPHI",
+      "original_mnemonic": "NPHI",
+      "unit": "m3/m3",
+      "effective_unit": "m3/m3",
+      "unit_override": false,
+      "family": "NPHI",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 3656,
+      "null_fraction": 0.7733696999752045,
+      "first_valid_depth": 1966.774,
+      "last_valid_depth": 2522.334,
+      "screening_unit": "v/v",
+      "range_screen": "assessed",
+      "range_flags": 76,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "PEF",
+      "original_mnemonic": "PEF",
+      "unit": "b/e",
+      "effective_unit": "b/e",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 3685,
+      "null_fraction": 0.7715720307463426,
+      "first_valid_depth": 1966.774,
+      "last_valid_depth": 2526.742,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "GR",
+      "original_mnemonic": "GR",
+      "unit": "gAPI",
+      "effective_unit": "gAPI",
+      "unit_override": false,
+      "family": "GR",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 15756,
+      "null_fraction": 0.023307711381105878,
+      "first_valid_depth": 136.086,
+      "last_valid_depth": 2530.846,
+      "screening_unit": "gAPI",
+      "range_screen": "assessed",
+      "range_flags": 7,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "RHOB",
+      "original_mnemonic": "RHOB",
+      "unit": "g/cm3",
+      "effective_unit": "g/cm3",
+      "unit_override": false,
+      "family": "RHOB",
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 3685,
+      "null_fraction": 0.7715720307463426,
+      "first_valid_depth": 1966.774,
+      "last_valid_depth": 2526.742,
+      "screening_unit": "g/cm3",
+      "range_screen": "assessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "DRHO",
+      "original_mnemonic": "DRHO",
+      "unit": "g/cm3",
+      "effective_unit": "g/cm3",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 4052,
+      "null_fraction": 0.748822216712125,
+      "first_valid_depth": 1910.838,
+      "last_valid_depth": 2526.59,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "DEPTH_MD",
+      "original_mnemonic": "DEPTH_MD",
+      "unit": "_",
+      "effective_unit": "_",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 15744,
+      "null_fraction": 0.024051574510290108,
+      "first_valid_depth": 136.086,
+      "last_valid_depth": 2529.022,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "X_LOC",
+      "original_mnemonic": "X_LOC",
+      "unit": "_",
+      "effective_unit": "_",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 15744,
+      "null_fraction": 0.024051574510290108,
+      "first_valid_depth": 136.086,
+      "last_valid_depth": 2529.022,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "Y_LOC",
+      "original_mnemonic": "Y_LOC",
+      "unit": "_",
+      "effective_unit": "_",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 15744,
+      "null_fraction": 0.024051574510290108,
+      "first_valid_depth": 136.086,
+      "last_valid_depth": 2529.022,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    },
+    {
+      "mnemonic": "Z_LOC",
+      "original_mnemonic": "Z_LOC",
+      "unit": "_",
+      "effective_unit": "_",
+      "unit_override": false,
+      "family": null,
+      "duplicate": false,
+      "samples": 16132,
+      "finite": 15744,
+      "null_fraction": 0.024051574510290108,
+      "first_valid_depth": 136.086,
+      "last_valid_depth": 2529.022,
+      "screening_unit": null,
+      "range_screen": "unassessed",
+      "range_flags": 0,
+      "spike_candidates": 0
+    }
+  ],
+  "intervals": [
+    {
+      "curve": "FORCE_2020_LITHOFACIES_CONFIDENCE",
+      "kind": "null",
+      "first_row": 13473,
+      "last_row": 13473,
+      "first_depth": 2128.046,
+      "last_depth": 2128.046,
+      "samples": 1
+    },
+    {
+      "curve": "FORCE_2020_LITHOFACIES_CONFIDENCE",
+      "kind": "null",
+      "first_row": 16111,
+      "last_row": 16131,
+      "first_depth": 2529.022,
+      "last_depth": 2532.062,
+      "samples": 21
+    },
+    {
+      "curve": "FORCE_2020_LITHOFACIES_LITHOLOGY",
+      "kind": "null",
+      "first_row": 16111,
+      "last_row": 16131,
+      "first_depth": 2529.022,
+      "last_depth": 2532.062,
+      "samples": 21
+    },
+    {
+      "curve": "CALI",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 6288,
+      "first_depth": 80.15,
+      "last_depth": 1035.926,
+      "samples": 6289
+    },
+    {
+      "curve": "CALI",
+      "kind": "null",
+      "first_row": 16097,
+      "last_row": 16131,
+      "first_depth": 2526.894,
+      "last_depth": 2532.062,
+      "samples": 35
+    },
+    {
+      "curve": "BS",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 367,
+      "first_depth": 80.15,
+      "last_depth": 135.934,
+      "samples": 368
+    },
+    {
+      "curve": "MUDWEIGHT",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 6380,
+      "first_depth": 80.15,
+      "last_depth": 1049.91,
+      "samples": 6381
+    },
+    {
+      "curve": "MUDWEIGHT",
+      "kind": "null",
+      "first_row": 16085,
+      "last_row": 16131,
+      "first_depth": 2525.07,
+      "last_depth": 2532.062,
+      "samples": 47
+    },
+    {
+      "curve": "ROP",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 374,
+      "first_depth": 80.15,
+      "last_depth": 136.998,
+      "samples": 375
+    },
+    {
+      "curve": "ROP",
+      "kind": "null",
+      "first_row": 868,
+      "last_row": 875,
+      "first_depth": 212.086,
+      "last_depth": 213.15,
+      "samples": 8
+    },
+    {
+      "curve": "ROP",
+      "kind": "null",
+      "first_row": 6420,
+      "last_row": 6426,
+      "first_depth": 1055.99,
+      "last_depth": 1056.902,
+      "samples": 7
+    },
+    {
+      "curve": "ROP",
+      "kind": "null",
+      "first_row": 12449,
+      "last_row": 12456,
+      "first_depth": 1972.398,
+      "last_depth": 1973.462,
+      "samples": 8
+    },
+    {
+      "curve": "ROP",
+      "kind": "null",
+      "first_row": 13830,
+      "last_row": 13837,
+      "first_depth": 2182.31,
+      "last_depth": 2183.374,
+      "samples": 8
+    },
+    {
+      "curve": "ROP",
+      "kind": "null",
+      "first_row": 13908,
+      "last_row": 13912,
+      "first_depth": 2194.166,
+      "last_depth": 2194.774,
+      "samples": 5
+    },
+    {
+      "curve": "ROP",
+      "kind": "null",
+      "first_row": 16085,
+      "last_row": 16131,
+      "first_depth": 2525.07,
+      "last_depth": 2532.062,
+      "samples": 47
+    },
+    {
+      "curve": "RDEP",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 367,
+      "first_depth": 80.15,
+      "last_depth": 135.934,
+      "samples": 368
+    },
+    {
+      "curve": "RDEP",
+      "kind": "null",
+      "first_row": 16112,
+      "last_row": 16131,
+      "first_depth": 2529.174,
+      "last_depth": 2532.062,
+      "samples": 20
+    },
+    {
+      "curve": "RSHA",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 6282,
+      "first_depth": 80.15,
+      "last_depth": 1035.014,
+      "samples": 6283
+    },
+    {
+      "curve": "RSHA",
+      "kind": "null",
+      "first_row": 12084,
+      "last_row": 12409,
+      "first_depth": 1916.918,
+      "last_depth": 1966.318,
+      "samples": 326
+    },
+    {
+      "curve": "RSHA",
+      "kind": "null",
+      "first_row": 13854,
+      "last_row": 13859,
+      "first_depth": 2185.958,
+      "last_depth": 2186.718,
+      "samples": 6
+    },
+    {
+      "curve": "RSHA",
+      "kind": "null",
+      "first_row": 15301,
+      "last_row": 15308,
+      "first_depth": 2405.902,
+      "last_depth": 2406.966,
+      "samples": 8
+    },
+    {
+      "curve": "RSHA",
+      "kind": "null",
+      "first_row": 16058,
+      "last_row": 16131,
+      "first_depth": 2520.966,
+      "last_depth": 2532.062,
+      "samples": 74
+    },
+    {
+      "curve": "RMED",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 367,
+      "first_depth": 80.15,
+      "last_depth": 135.934,
+      "samples": 368
+    },
+    {
+      "curve": "RMED",
+      "kind": "null",
+      "first_row": 2093,
+      "last_row": 6342,
+      "first_depth": 398.286,
+      "last_depth": 1044.134,
+      "samples": 4250
+    },
+    {
+      "curve": "RMED",
+      "kind": "null",
+      "first_row": 13855,
+      "last_row": 13859,
+      "first_depth": 2186.11,
+      "last_depth": 2186.718,
+      "samples": 5
+    },
+    {
+      "curve": "RMED",
+      "kind": "null",
+      "first_row": 15302,
+      "last_row": 15309,
+      "first_depth": 2406.054,
+      "last_depth": 2407.118,
+      "samples": 8
+    },
+    {
+      "curve": "RMED",
+      "kind": "null",
+      "first_row": 16112,
+      "last_row": 16131,
+      "first_depth": 2529.174,
+      "last_depth": 2532.062,
+      "samples": 20
+    },
+    {
+      "curve": "RXO",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 6282,
+      "first_depth": 80.15,
+      "last_depth": 1035.014,
+      "samples": 6283
+    },
+    {
+      "curve": "RXO",
+      "kind": "null",
+      "first_row": 16057,
+      "last_row": 16131,
+      "first_depth": 2520.814,
+      "last_depth": 2532.062,
+      "samples": 75
+    },
+    {
+      "curve": "RXO",
+      "kind": "range",
+      "first_row": 15301,
+      "last_row": 15307,
+      "first_depth": 2405.902,
+      "last_depth": 2406.814,
+      "samples": 7
+    },
+    {
+      "curve": "RMIC",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 6342,
+      "first_depth": 80.15,
+      "last_depth": 1044.134,
+      "samples": 6343
+    },
+    {
+      "curve": "RMIC",
+      "kind": "null",
+      "first_row": 12309,
+      "last_row": 12410,
+      "first_depth": 1951.118,
+      "last_depth": 1966.47,
+      "samples": 102
+    },
+    {
+      "curve": "RMIC",
+      "kind": "null",
+      "first_row": 16096,
+      "last_row": 16131,
+      "first_depth": 2526.742,
+      "last_depth": 2532.062,
+      "samples": 36
+    },
+    {
+      "curve": "RMIC",
+      "kind": "spike",
+      "first_row": 6358,
+      "last_row": 6358,
+      "first_depth": 1046.566,
+      "last_depth": 1046.566,
+      "samples": 1
+    },
+    {
+      "curve": "RMIC",
+      "kind": "spike",
+      "first_row": 6536,
+      "last_row": 6536,
+      "first_depth": 1073.622,
+      "last_depth": 1073.622,
+      "samples": 1
+    },
+    {
+      "curve": "RMIC",
+      "kind": "spike",
+      "first_row": 6819,
+      "last_row": 6819,
+      "first_depth": 1116.638,
+      "last_depth": 1116.638,
+      "samples": 1
+    },
+    {
+      "curve": "RMIC",
+      "kind": "spike",
+      "first_row": 7024,
+      "last_row": 7024,
+      "first_depth": 1147.798,
+      "last_depth": 1147.798,
+      "samples": 1
+    },
+    {
+      "curve": "RMIC",
+      "kind": "spike",
+      "first_row": 9649,
+      "last_row": 9649,
+      "first_depth": 1546.798,
+      "last_depth": 1546.798,
+      "samples": 1
+    },
+    {
+      "curve": "RMIC",
+      "kind": "spike",
+      "first_row": 10363,
+      "last_row": 10364,
+      "first_depth": 1655.326,
+      "last_depth": 1655.478,
+      "samples": 2
+    },
+    {
+      "curve": "RMIC",
+      "kind": "spike",
+      "first_row": 11526,
+      "last_row": 11527,
+      "first_depth": 1832.102,
+      "last_depth": 1832.254,
+      "samples": 2
+    },
+    {
+      "curve": "RMIC",
+      "kind": "spike",
+      "first_row": 14380,
+      "last_row": 14380,
+      "first_depth": 2265.91,
+      "last_depth": 2265.91,
+      "samples": 1
+    },
+    {
+      "curve": "RMIC",
+      "kind": "spike",
+      "first_row": 14435,
+      "last_row": 14435,
+      "first_depth": 2274.27,
+      "last_depth": 2274.27,
+      "samples": 1
+    },
+    {
+      "curve": "SP",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 6342,
+      "first_depth": 80.15,
+      "last_depth": 1044.134,
+      "samples": 6343
+    },
+    {
+      "curve": "SP",
+      "kind": "null",
+      "first_row": 12118,
+      "last_row": 16131,
+      "first_depth": 1922.086,
+      "last_depth": 2532.062,
+      "samples": 4014
+    },
+    {
+      "curve": "DTC",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 11848,
+      "first_depth": 80.15,
+      "last_depth": 1881.046,
+      "samples": 11849
+    },
+    {
+      "curve": "DTC",
+      "kind": "null",
+      "first_row": 16023,
+      "last_row": 16131,
+      "first_depth": 2515.646,
+      "last_depth": 2532.062,
+      "samples": 109
+    },
+    {
+      "curve": "NPHI",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 12411,
+      "first_depth": 80.15,
+      "last_depth": 1966.622,
+      "samples": 12412
+    },
+    {
+      "curve": "NPHI",
+      "kind": "null",
+      "first_row": 16068,
+      "last_row": 16131,
+      "first_depth": 2522.486,
+      "last_depth": 2532.062,
+      "samples": 64
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 12412,
+      "last_row": 12412,
+      "first_depth": 1966.774,
+      "last_depth": 1966.774,
+      "samples": 1
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 12415,
+      "last_row": 12439,
+      "first_depth": 1967.23,
+      "last_depth": 1970.878,
+      "samples": 25
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 12471,
+      "last_row": 12471,
+      "first_depth": 1975.742,
+      "last_depth": 1975.742,
+      "samples": 1
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 12475,
+      "last_row": 12476,
+      "first_depth": 1976.35,
+      "last_depth": 1976.502,
+      "samples": 2
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 12486,
+      "last_row": 12486,
+      "first_depth": 1978.022,
+      "last_depth": 1978.022,
+      "samples": 1
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 12737,
+      "last_row": 12738,
+      "first_depth": 2016.174,
+      "last_depth": 2016.326,
+      "samples": 2
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 12747,
+      "last_row": 12751,
+      "first_depth": 2017.694,
+      "last_depth": 2018.302,
+      "samples": 5
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 12762,
+      "last_row": 12778,
+      "first_depth": 2019.974,
+      "last_depth": 2022.406,
+      "samples": 17
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 12794,
+      "last_row": 12805,
+      "first_depth": 2024.838,
+      "last_depth": 2026.51,
+      "samples": 12
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 12809,
+      "last_row": 12814,
+      "first_depth": 2027.118,
+      "last_depth": 2027.878,
+      "samples": 6
+    },
+    {
+      "curve": "NPHI",
+      "kind": "range",
+      "first_row": 13879,
+      "last_row": 13882,
+      "first_depth": 2189.758,
+      "last_depth": 2190.214,
+      "samples": 4
+    },
+    {
+      "curve": "PEF",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 12411,
+      "first_depth": 80.15,
+      "last_depth": 1966.622,
+      "samples": 12412
+    },
+    {
+      "curve": "PEF",
+      "kind": "null",
+      "first_row": 16097,
+      "last_row": 16131,
+      "first_depth": 2526.894,
+      "last_depth": 2532.062,
+      "samples": 35
+    },
+    {
+      "curve": "GR",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 367,
+      "first_depth": 80.15,
+      "last_depth": 135.934,
+      "samples": 368
+    },
+    {
+      "curve": "GR",
+      "kind": "null",
+      "first_row": 16124,
+      "last_row": 16131,
+      "first_depth": 2530.998,
+      "last_depth": 2532.062,
+      "samples": 8
+    },
+    {
+      "curve": "GR",
+      "kind": "range",
+      "first_row": 13768,
+      "last_row": 13768,
+      "first_depth": 2172.886,
+      "last_depth": 2172.886,
+      "samples": 1
+    },
+    {
+      "curve": "GR",
+      "kind": "range",
+      "first_row": 13778,
+      "last_row": 13783,
+      "first_depth": 2174.406,
+      "last_depth": 2175.166,
+      "samples": 6
+    },
+    {
+      "curve": "RHOB",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 12411,
+      "first_depth": 80.15,
+      "last_depth": 1966.622,
+      "samples": 12412
+    },
+    {
+      "curve": "RHOB",
+      "kind": "null",
+      "first_row": 16097,
+      "last_row": 16131,
+      "first_depth": 2526.894,
+      "last_depth": 2532.062,
+      "samples": 35
+    },
+    {
+      "curve": "DRHO",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 12043,
+      "first_depth": 80.15,
+      "last_depth": 1910.686,
+      "samples": 12044
+    },
+    {
+      "curve": "DRHO",
+      "kind": "null",
+      "first_row": 16096,
+      "last_row": 16131,
+      "first_depth": 2526.742,
+      "last_depth": 2532.062,
+      "samples": 36
+    },
+    {
+      "curve": "DEPTH_MD",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 367,
+      "first_depth": 80.15,
+      "last_depth": 135.934,
+      "samples": 368
+    },
+    {
+      "curve": "DEPTH_MD",
+      "kind": "null",
+      "first_row": 16112,
+      "last_row": 16131,
+      "first_depth": 2529.174,
+      "last_depth": 2532.062,
+      "samples": 20
+    },
+    {
+      "curve": "X_LOC",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 367,
+      "first_depth": 80.15,
+      "last_depth": 135.934,
+      "samples": 368
+    },
+    {
+      "curve": "X_LOC",
+      "kind": "null",
+      "first_row": 16112,
+      "last_row": 16131,
+      "first_depth": 2529.174,
+      "last_depth": 2532.062,
+      "samples": 20
+    },
+    {
+      "curve": "Y_LOC",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 367,
+      "first_depth": 80.15,
+      "last_depth": 135.934,
+      "samples": 368
+    },
+    {
+      "curve": "Y_LOC",
+      "kind": "null",
+      "first_row": 16112,
+      "last_row": 16131,
+      "first_depth": 2529.174,
+      "last_depth": 2532.062,
+      "samples": 20
+    },
+    {
+      "curve": "Z_LOC",
+      "kind": "null",
+      "first_row": 0,
+      "last_row": 367,
+      "first_depth": 80.15,
+      "last_depth": 135.934,
+      "samples": 368
+    },
+    {
+      "curve": "Z_LOC",
+      "kind": "null",
+      "first_row": 16112,
+      "last_row": 16131,
+      "first_depth": 2529.174,
+      "last_depth": 2532.062,
+      "samples": 20
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 6400,
+      "last_row": 6418,
+      "first_depth": 1052.95,
+      "last_depth": 1055.686,
+      "samples": 19
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 6420,
+      "last_row": 6427,
+      "first_depth": 1055.99,
+      "last_depth": 1057.054,
+      "samples": 8
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 6438,
+      "last_row": 6446,
+      "first_depth": 1058.726,
+      "last_depth": 1059.942,
+      "samples": 9
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 6613,
+      "last_row": 6623,
+      "first_depth": 1085.326,
+      "last_depth": 1086.846,
+      "samples": 11
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 6630,
+      "last_row": 6631,
+      "first_depth": 1087.91,
+      "last_depth": 1088.062,
+      "samples": 2
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 6638,
+      "last_row": 6639,
+      "first_depth": 1089.126,
+      "last_depth": 1089.278,
+      "samples": 2
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 6654,
+      "last_row": 6685,
+      "first_depth": 1091.558,
+      "last_depth": 1096.27,
+      "samples": 32
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 6693,
+      "last_row": 6700,
+      "first_depth": 1097.486,
+      "last_depth": 1098.55,
+      "samples": 8
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 6708,
+      "last_row": 6710,
+      "first_depth": 1099.766,
+      "last_depth": 1100.07,
+      "samples": 3
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 6718,
+      "last_row": 6760,
+      "first_depth": 1101.286,
+      "last_depth": 1107.67,
+      "samples": 43
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 12418,
+      "last_row": 12424,
+      "first_depth": 1967.686,
+      "last_depth": 1968.598,
+      "samples": 7
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 12433,
+      "last_row": 12437,
+      "first_depth": 1969.966,
+      "last_depth": 1970.574,
+      "samples": 5
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 12444,
+      "last_row": 12445,
+      "first_depth": 1971.638,
+      "last_depth": 1971.79,
+      "samples": 2
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 12447,
+      "last_row": 12485,
+      "first_depth": 1972.094,
+      "last_depth": 1977.87,
+      "samples": 39
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 12699,
+      "last_row": 12707,
+      "first_depth": 2010.398,
+      "last_depth": 2011.614,
+      "samples": 9
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 12765,
+      "last_row": 12771,
+      "first_depth": 2020.43,
+      "last_depth": 2021.342,
+      "samples": 7
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 12773,
+      "last_row": 12778,
+      "first_depth": 2021.646,
+      "last_depth": 2022.406,
+      "samples": 6
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 12791,
+      "last_row": 12796,
+      "first_depth": 2024.382,
+      "last_depth": 2025.142,
+      "samples": 6
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 12803,
+      "last_row": 12811,
+      "first_depth": 2026.206,
+      "last_depth": 2027.422,
+      "samples": 9
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 12818,
+      "last_row": 12819,
+      "first_depth": 2028.486,
+      "last_depth": 2028.638,
+      "samples": 2
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 13828,
+      "last_row": 13838,
+      "first_depth": 2182.006,
+      "last_depth": 2183.526,
+      "samples": 11
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 15008,
+      "last_row": 15010,
+      "first_depth": 2361.366,
+      "last_depth": 2361.67,
+      "samples": 3
+    },
+    {
+      "curve": "CALI-BS",
+      "kind": "enlargement",
+      "first_row": 15020,
+      "last_row": 15026,
+      "first_depth": 2363.19,
+      "last_depth": 2364.102,
+      "samples": 7
+    }
+  ],
+  "washout": {
+    "status": "assessed",
+    "caliper": "CALI",
+    "bit": "BS",
+    "co_valid": 9808,
+    "threshold_in": 1.0,
+    "candidates": 250,
+    "reason": "Candidate enlarged borehole only; casing/tool/environment unknown"
+  },
+  "missing_families": [],
+  "rules": {
+    "range_bounds": {
+      "GR": [
+        0,
+        300
+      ],
+      "RHOB": [
+        1.5,
+        3.5
+      ],
+      "NPHI": [
+        -0.15,
+        0.65
+      ],
+      "DT": [
+        35,
+        250
+      ],
+      "RES": [
+        0.01,
+        10000
+      ],
+      "CALI": [
+        2,
+        40
+      ],
+      "BS": [
+        2,
+        40
+      ]
+    },
+    "spike": "11-sample full window, abs(x-median)>8*max(1.4826*MAD,family_floor); resistivity in log10",
+    "spike_floor": {
+      "GR": 1,
+      "RHOB": 0.01,
+      "NPHI": 0.01,
+      "DT": 1,
+      "RES": 0.05,
+      "CALI": 0.05,
+      "BS": 0.05
+    },
+    "conditioning": "none; raw values and ordering preserved"
+  },
+  "input_sha256": "5604b035b6d6406eb51b01796d48688505a1b56cc77e50ec17dcf00cb40252ce",
+  "input_file": "25_9-1.las",
+  "version": "2.0",
+  "depth_column": "DEPT",
+  "depth_unit": "m",
+  "parser_warnings": [],
+  "NULL": -999.25,
+  "depth_convention": "LAS first-column index; MD/TVD and datum require source confirmation"
+}

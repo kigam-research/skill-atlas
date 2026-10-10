@@ -1,0 +1,1826 @@
+{
+  "schema": "geo-intake-report/v1",
+  "mode": "report-only",
+  "reference": "rasters/kambalda_dem_1s_sample.tif",
+  "normalization": "not performed; explicit researcher choice and a separate tool are required",
+  "scope": "Declaration agreement is not scientific validity, positional accuracy or acceptance for analysis.",
+  "files": [
+    {
+      "path": "rasters/kambalda_dem_1s_sample.tif",
+      "declaration": {},
+      "sha256": "5b3c88104f62e19e06e0e5316ce933ea85ffcd214da2617ae39fe9f89f19159c",
+      "kind": "raster",
+      "crs": "EPSG:4326",
+      "bounds": [
+        121.4,
+        -31.5,
+        121.9,
+        -31.0
+      ],
+      "resolution": [
+        0.004166666666666667,
+        0.004166666666666667
+      ],
+      "transform": [
+        0.004166666666666667,
+        0.0,
+        121.4,
+        0.0,
+        -0.004166666666666667,
+        -31.0
+      ],
+      "shape": [
+        120,
+        120
+      ],
+      "bands": [
+        {
+          "band": 1,
+          "nodata": null,
+          "units": null,
+          "sentinel_count": null,
+          "mask_count": 0,
+          "nonfinite_count": 0
+        }
+      ],
+      "units": null,
+      "nodata": null,
+      "tags": {
+        "DataType": "Generic",
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": {
+        "SourceBandIndex": "0"
+      },
+      "declaration_comparisons": {
+        "crs": {
+          "status": "unverified",
+          "band_observations": null,
+          "observed": "EPSG:4326",
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "unverified",
+          "band_observations": null,
+          "observed": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        }
+      },
+      "reference_comparisons": {
+        "crs": {
+          "status": "agree",
+          "expected": "EPSG:4326"
+        },
+        "resolution": {
+          "status": "agree",
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ]
+        }
+      },
+      "comparisons": {
+        "crs": {
+          "status": "unverified",
+          "declaration_status": "unverified",
+          "reference_status": "agree",
+          "observed": "EPSG:4326",
+          "expected": "EPSG:4326",
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "unverified",
+          "declaration_status": "unverified",
+          "reference_status": "agree",
+          "observed": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        },
+        "extent": {
+          "status": "agree",
+          "nonempty_coordinate_intersection": true,
+          "intersection_coordinate_area": 0.25,
+          "basis": "same-CRS bounding rectangles",
+          "decision": "Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap."
+        },
+        "alignment": {
+          "status": "agree",
+          "offset_pixels": [
+            0.0,
+            -0.0
+          ],
+          "residual_pixels": [
+            0.0,
+            0.0
+          ],
+          "reason": "equal spacing and integer origin offset required",
+          "nominal_grid_status": "agree",
+          "decision": "Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum."
+        }
+      },
+      "status": "unverified",
+      "crs_detail": {
+        "datum": "World Geodetic System 1984 ensemble",
+        "axes": [
+          {
+            "name": "Geodetic latitude",
+            "unit": "degree",
+            "direction": "north"
+          },
+          {
+            "name": "Geodetic longitude",
+            "unit": "degree",
+            "direction": "east"
+          }
+        ],
+        "coordinate_epoch": "unverified: not read by this adapter"
+      }
+    },
+    {
+      "path": "rasters/kambalda_grav_cscba.tif",
+      "declaration": {},
+      "sha256": "3f73b3f33989c8b7a98d6341df6c4c6bdaba3d7071f3c2e43449ea4dac5fb952",
+      "kind": "raster",
+      "crs": "EPSG:4283",
+      "bounds": [
+        121.40208333333334,
+        -31.502083333333335,
+        121.90208333333334,
+        -31.002083333333335
+      ],
+      "resolution": [
+        0.004166666666666667,
+        0.004166666666666667
+      ],
+      "transform": [
+        0.004166666666666667,
+        0.0,
+        121.40208333333334,
+        0.0,
+        -0.004166666666666667,
+        -31.002083333333335
+      ],
+      "shape": [
+        120,
+        120
+      ],
+      "bands": [
+        {
+          "band": 1,
+          "nodata": -999999.0,
+          "units": null,
+          "sentinel_count": 0,
+          "mask_count": 0,
+          "nonfinite_count": 0
+        }
+      ],
+      "units": null,
+      "nodata": -999999.0,
+      "tags": {
+        "TIFFTAG_XRESOLUTION": "1",
+        "TIFFTAG_YRESOLUTION": "1",
+        "TIFFTAG_RESOLUTIONUNIT": "1 (unitless)",
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": {},
+      "capability": {
+        "crs": "EPSG:4283",
+        "resolution": [
+          0.004166666666666667,
+          0.004166666666666667
+        ],
+        "nodata": -999999.0,
+        "units": "W.m-2.Sr-1",
+        "axis_labels": [
+          "lat",
+          "long"
+        ],
+        "sha256": "ecb21ff89e499568058c787c12200c29c7b1821e60028b02ff7130d406a29ea7"
+      },
+      "capability_path": "capabilities/geophys__Gravmap2019-grid-grv_cscba.xml",
+      "declaration_comparisons": {
+        "crs": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4283",
+          "basis": "WCS declaration",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "basis": "WCS declaration",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -999999.0
+          ],
+          "observed": -999999.0,
+          "expected": -999999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        }
+      },
+      "reference_comparisons": {
+        "crs": {
+          "status": "disagree",
+          "expected": "EPSG:4326"
+        },
+        "resolution": {
+          "status": "agree",
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ]
+        }
+      },
+      "comparisons": {
+        "crs": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4326",
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "agree",
+          "declaration_status": "agree",
+          "reference_status": "agree",
+          "observed": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -999999.0
+          ],
+          "observed": -999999.0,
+          "expected": -999999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        },
+        "extent": {
+          "status": "unverified",
+          "nonempty_coordinate_intersection": true,
+          "intersection_coordinate_area": 0.24792100694444455,
+          "basis": "conditional nominal lon/lat only; datum operation not accepted",
+          "decision": "Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap."
+        },
+        "alignment": {
+          "status": "unverified",
+          "offset_pixels": [
+            0.49999999999954525,
+            0.5000000000003979
+          ],
+          "residual_pixels": [
+            0.49999999999954525,
+            0.4999999999996021
+          ],
+          "reason": "equal spacing and integer origin offset required",
+          "nominal_grid_status": "disagree",
+          "decision": "Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum."
+        }
+      },
+      "status": "disagree",
+      "crs_detail": {
+        "datum": "Geocentric Datum of Australia 1994",
+        "axes": [
+          {
+            "name": "Geodetic latitude",
+            "unit": "degree",
+            "direction": "north"
+          },
+          {
+            "name": "Geodetic longitude",
+            "unit": "degree",
+            "direction": "east"
+          }
+        ],
+        "coordinate_epoch": "unverified: not read by this adapter"
+      }
+    },
+    {
+      "path": "rasters/kambalda_k_pctk.tif",
+      "declaration": {},
+      "sha256": "f0699727ae2d7bc25a9e81931437e5553515b36dd984aca7c01c2052c8b9fc1a",
+      "kind": "raster",
+      "crs": "EPSG:4283",
+      "bounds": [
+        121.40050000000001,
+        -31.500500000000002,
+        121.90050000000001,
+        -31.000500000000002
+      ],
+      "resolution": [
+        0.001,
+        0.001
+      ],
+      "transform": [
+        0.001,
+        0.0,
+        121.40050000000001,
+        0.0,
+        -0.001,
+        -31.000500000000002
+      ],
+      "shape": [
+        500,
+        500
+      ],
+      "bands": [
+        {
+          "band": 1,
+          "nodata": -99999.0,
+          "units": null,
+          "sentinel_count": 347,
+          "mask_count": 347,
+          "nonfinite_count": 0
+        }
+      ],
+      "units": null,
+      "nodata": -99999.0,
+      "tags": {
+        "TIFFTAG_XRESOLUTION": "1",
+        "TIFFTAG_YRESOLUTION": "1",
+        "TIFFTAG_RESOLUTIONUNIT": "1 (unitless)",
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": {},
+      "capability": {
+        "crs": "EPSG:4283",
+        "resolution": [
+          0.0010000000000000005,
+          0.0009999999999999998
+        ],
+        "nodata": -99999.0,
+        "units": "W.m-2.Sr-1",
+        "axis_labels": [
+          "lat",
+          "long"
+        ],
+        "sha256": "1c160f6018bd040922fd564f5a62577f98e8002dba10e262e2901fa584518bd3"
+      },
+      "capability_path": "capabilities/geophys__radmap_v4_2019_filtered_pctk.xml",
+      "declaration_comparisons": {
+        "crs": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4283",
+          "basis": "WCS declaration",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": [
+            0.001,
+            0.001
+          ],
+          "expected": [
+            0.0010000000000000005,
+            0.0009999999999999998
+          ],
+          "basis": "WCS declaration",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": -99999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        }
+      },
+      "reference_comparisons": {
+        "crs": {
+          "status": "disagree",
+          "expected": "EPSG:4326"
+        },
+        "resolution": {
+          "status": "disagree",
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ]
+        }
+      },
+      "comparisons": {
+        "crs": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4326",
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": [
+            0.001,
+            0.001
+          ],
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": -99999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        },
+        "extent": {
+          "status": "unverified",
+          "nonempty_coordinate_intersection": true,
+          "intersection_coordinate_area": 0.24950024999999762,
+          "basis": "conditional nominal lon/lat only; datum operation not accepted",
+          "decision": "Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap."
+        },
+        "alignment": {
+          "status": "unverified",
+          "reason": "different pixel spacing",
+          "nominal_grid_status": "disagree",
+          "decision": "Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum."
+        }
+      },
+      "status": "disagree",
+      "crs_detail": {
+        "datum": "Geocentric Datum of Australia 1994",
+        "axes": [
+          {
+            "name": "Geodetic latitude",
+            "unit": "degree",
+            "direction": "north"
+          },
+          {
+            "name": "Geodetic longitude",
+            "unit": "degree",
+            "direction": "east"
+          }
+        ],
+        "coordinate_epoch": "unverified: not read by this adapter"
+      }
+    },
+    {
+      "path": "rasters/kambalda_mag_1vd.tif",
+      "declaration": {},
+      "sha256": "9e588d9575cbb816d390d35264dca9804edfc2b7f9b222a12c585c6b13fcbae1",
+      "kind": "raster",
+      "crs": "EPSG:4283",
+      "bounds": [
+        121.40020320455861,
+        -31.49985559965278,
+        121.9001832045586,
+        -30.99987559965278
+      ],
+      "resolution": [
+        0.0008333,
+        0.0008333
+      ],
+      "transform": [
+        0.0008333,
+        0.0,
+        121.40020320455861,
+        0.0,
+        -0.0008333,
+        -30.99987559965278
+      ],
+      "shape": [
+        600,
+        600
+      ],
+      "bands": [
+        {
+          "band": 1,
+          "nodata": -99999.0,
+          "units": null,
+          "sentinel_count": 0,
+          "mask_count": 0,
+          "nonfinite_count": 0
+        }
+      ],
+      "units": null,
+      "nodata": -99999.0,
+      "tags": {
+        "TIFFTAG_XRESOLUTION": "1",
+        "TIFFTAG_YRESOLUTION": "1",
+        "TIFFTAG_RESOLUTIONUNIT": "1 (unitless)",
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": {},
+      "capability": {
+        "crs": "EPSG:4283",
+        "resolution": [
+          0.0008333000000000001,
+          0.0008333
+        ],
+        "nodata": -99999.0,
+        "units": "W.m-2.Sr-1",
+        "axis_labels": [
+          "lat",
+          "long"
+        ],
+        "sha256": "f120e0033b7fa3b0cb2393dbf09826a801d7897891e72977ef6b4629fde2ff3b"
+      },
+      "capability_path": "capabilities/geophys__magmap_v7_2019_1VD.xml",
+      "declaration_comparisons": {
+        "crs": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4283",
+          "basis": "WCS declaration",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": [
+            0.0008333,
+            0.0008333
+          ],
+          "expected": [
+            0.0008333000000000001,
+            0.0008333
+          ],
+          "basis": "WCS declaration",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": -99999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        }
+      },
+      "reference_comparisons": {
+        "crs": {
+          "status": "disagree",
+          "expected": "EPSG:4326"
+        },
+        "resolution": {
+          "status": "disagree",
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ]
+        }
+      },
+      "comparisons": {
+        "crs": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4326",
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": [
+            0.0008333,
+            0.0008333
+          ],
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": -99999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        },
+        "extent": {
+          "status": "unverified",
+          "nonempty_coordinate_intersection": true,
+          "intersection_coordinate_area": 0.2498262268898974,
+          "basis": "conditional nominal lon/lat only; datum operation not accepted",
+          "decision": "Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap."
+        },
+        "alignment": {
+          "status": "unverified",
+          "reason": "different pixel spacing",
+          "nominal_grid_status": "disagree",
+          "decision": "Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum."
+        }
+      },
+      "status": "disagree",
+      "crs_detail": {
+        "datum": "Geocentric Datum of Australia 1994",
+        "axes": [
+          {
+            "name": "Geodetic latitude",
+            "unit": "degree",
+            "direction": "north"
+          },
+          {
+            "name": "Geodetic longitude",
+            "unit": "degree",
+            "direction": "east"
+          }
+        ],
+        "coordinate_epoch": "unverified: not read by this adapter"
+      }
+    },
+    {
+      "path": "rasters/kambalda_th_ppm.tif",
+      "declaration": {},
+      "sha256": "2046f7938b8c2fe41a77f787a383bc4f2ef9895c93101eb87c09192485f66b05",
+      "kind": "raster",
+      "crs": "EPSG:4283",
+      "bounds": [
+        121.40050000000001,
+        -31.500500000000002,
+        121.90050000000001,
+        -31.000500000000002
+      ],
+      "resolution": [
+        0.001,
+        0.001
+      ],
+      "transform": [
+        0.001,
+        0.0,
+        121.40050000000001,
+        0.0,
+        -0.001,
+        -31.000500000000002
+      ],
+      "shape": [
+        500,
+        500
+      ],
+      "bands": [
+        {
+          "band": 1,
+          "nodata": -99999.0,
+          "units": null,
+          "sentinel_count": 347,
+          "mask_count": 347,
+          "nonfinite_count": 0
+        }
+      ],
+      "units": null,
+      "nodata": -99999.0,
+      "tags": {
+        "TIFFTAG_XRESOLUTION": "1",
+        "TIFFTAG_YRESOLUTION": "1",
+        "TIFFTAG_RESOLUTIONUNIT": "1 (unitless)",
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": {},
+      "capability": {
+        "crs": "EPSG:4283",
+        "resolution": [
+          0.0010000000000000005,
+          0.0009999999999999998
+        ],
+        "nodata": -99999.0,
+        "units": "W.m-2.Sr-1",
+        "axis_labels": [
+          "lat",
+          "long"
+        ],
+        "sha256": "e9310fe4d22a245ad8ac0186142e441a1d888ac79e484ecb922037a0e555f499"
+      },
+      "capability_path": "capabilities/geophys__radmap_v4_2019_filtered_ppmth.xml",
+      "declaration_comparisons": {
+        "crs": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4283",
+          "basis": "WCS declaration",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": [
+            0.001,
+            0.001
+          ],
+          "expected": [
+            0.0010000000000000005,
+            0.0009999999999999998
+          ],
+          "basis": "WCS declaration",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": -99999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        }
+      },
+      "reference_comparisons": {
+        "crs": {
+          "status": "disagree",
+          "expected": "EPSG:4326"
+        },
+        "resolution": {
+          "status": "disagree",
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ]
+        }
+      },
+      "comparisons": {
+        "crs": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4326",
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": [
+            0.001,
+            0.001
+          ],
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": -99999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        },
+        "extent": {
+          "status": "unverified",
+          "nonempty_coordinate_intersection": true,
+          "intersection_coordinate_area": 0.24950024999999762,
+          "basis": "conditional nominal lon/lat only; datum operation not accepted",
+          "decision": "Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap."
+        },
+        "alignment": {
+          "status": "unverified",
+          "reason": "different pixel spacing",
+          "nominal_grid_status": "disagree",
+          "decision": "Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum."
+        }
+      },
+      "status": "disagree",
+      "crs_detail": {
+        "datum": "Geocentric Datum of Australia 1994",
+        "axes": [
+          {
+            "name": "Geodetic latitude",
+            "unit": "degree",
+            "direction": "north"
+          },
+          {
+            "name": "Geodetic longitude",
+            "unit": "degree",
+            "direction": "east"
+          }
+        ],
+        "coordinate_epoch": "unverified: not read by this adapter"
+      }
+    },
+    {
+      "path": "rasters/kambalda_tmi_40m.tif",
+      "declaration": {},
+      "sha256": "4e9b7b467f30c44644e8b366e9bdd8df95ff6a543b631f42c767460697bc43ae",
+      "kind": "raster",
+      "crs": "EPSG:4283",
+      "bounds": [
+        121.39987925,
+        -31.49979415,
+        121.89967924999999,
+        -30.99999415
+      ],
+      "resolution": [
+        0.0004165,
+        0.0004165
+      ],
+      "transform": [
+        0.0004165,
+        0.0,
+        121.39987925,
+        0.0,
+        -0.0004165,
+        -30.99999415
+      ],
+      "shape": [
+        1200,
+        1200
+      ],
+      "bands": [
+        {
+          "band": 1,
+          "nodata": -99999.0,
+          "units": null,
+          "sentinel_count": 0,
+          "mask_count": 0,
+          "nonfinite_count": 0
+        }
+      ],
+      "units": null,
+      "nodata": -99999.0,
+      "tags": {
+        "TIFFTAG_XRESOLUTION": "1",
+        "TIFFTAG_YRESOLUTION": "1",
+        "TIFFTAG_RESOLUTIONUNIT": "1 (unitless)",
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": {},
+      "capability": {
+        "crs": "EPSG:4283",
+        "resolution": [
+          0.0004165,
+          0.00041649999999999993
+        ],
+        "nodata": -99999.0,
+        "units": "W.m-2.Sr-1",
+        "axis_labels": [
+          "lat",
+          "long"
+        ],
+        "sha256": "8cf331f4019368971b09223b162275530d6c4ceec507da3dbd2cdb93a829decd"
+      },
+      "capability_path": "capabilities/geophys__magmap_v7_2019_TMI_40m.xml",
+      "declaration_comparisons": {
+        "crs": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4283",
+          "basis": "WCS declaration",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": [
+            0.0004165,
+            0.0004165
+          ],
+          "expected": [
+            0.0004165,
+            0.00041649999999999993
+          ],
+          "basis": "WCS declaration",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": -99999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        }
+      },
+      "reference_comparisons": {
+        "crs": {
+          "status": "disagree",
+          "expected": "EPSG:4326"
+        },
+        "resolution": {
+          "status": "disagree",
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ]
+        }
+      },
+      "comparisons": {
+        "crs": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4326",
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": [
+            0.0004165,
+            0.0004165
+          ],
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": -99999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        },
+        "extent": {
+          "status": "unverified",
+          "nonempty_coordinate_intersection": true,
+          "intersection_coordinate_area": 0.2497367660263801,
+          "basis": "conditional nominal lon/lat only; datum operation not accepted",
+          "decision": "Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap."
+        },
+        "alignment": {
+          "status": "unverified",
+          "reason": "different pixel spacing",
+          "nominal_grid_status": "disagree",
+          "decision": "Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum."
+        }
+      },
+      "status": "disagree",
+      "crs_detail": {
+        "datum": "Geocentric Datum of Australia 1994",
+        "axes": [
+          {
+            "name": "Geodetic latitude",
+            "unit": "degree",
+            "direction": "north"
+          },
+          {
+            "name": "Geodetic longitude",
+            "unit": "degree",
+            "direction": "east"
+          }
+        ],
+        "coordinate_epoch": "unverified: not read by this adapter"
+      }
+    },
+    {
+      "path": "rasters/kambalda_u_ppm.tif",
+      "declaration": {},
+      "sha256": "cee2dec69e31645398393584e6da3fa9c4b14bdd8cc1c2d5d5bfecb347fa5406",
+      "kind": "raster",
+      "crs": "EPSG:4283",
+      "bounds": [
+        121.40050000000001,
+        -31.500500000000002,
+        121.90050000000001,
+        -31.000500000000002
+      ],
+      "resolution": [
+        0.001,
+        0.001
+      ],
+      "transform": [
+        0.001,
+        0.0,
+        121.40050000000001,
+        0.0,
+        -0.001,
+        -31.000500000000002
+      ],
+      "shape": [
+        500,
+        500
+      ],
+      "bands": [
+        {
+          "band": 1,
+          "nodata": -99999.0,
+          "units": null,
+          "sentinel_count": 347,
+          "mask_count": 347,
+          "nonfinite_count": 0
+        }
+      ],
+      "units": null,
+      "nodata": -99999.0,
+      "tags": {
+        "TIFFTAG_XRESOLUTION": "1",
+        "TIFFTAG_YRESOLUTION": "1",
+        "TIFFTAG_RESOLUTIONUNIT": "1 (unitless)",
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": {},
+      "capability": {
+        "crs": "EPSG:4283",
+        "resolution": [
+          0.0010000000000000005,
+          0.0009999999999999998
+        ],
+        "nodata": -99999.0,
+        "units": "W.m-2.Sr-1",
+        "axis_labels": [
+          "lat",
+          "long"
+        ],
+        "sha256": "d5a5784849830a6565ba45fa43037d0720a242f42839d94f62dc6eb961c7fc99"
+      },
+      "capability_path": "capabilities/geophys__radmap_v4_2019_filtered_ppmu.xml",
+      "declaration_comparisons": {
+        "crs": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4283",
+          "basis": "WCS declaration",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "agree",
+          "band_observations": null,
+          "observed": [
+            0.001,
+            0.001
+          ],
+          "expected": [
+            0.0010000000000000005,
+            0.0009999999999999998
+          ],
+          "basis": "WCS declaration",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": -99999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        }
+      },
+      "reference_comparisons": {
+        "crs": {
+          "status": "disagree",
+          "expected": "EPSG:4326"
+        },
+        "resolution": {
+          "status": "disagree",
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ]
+        }
+      },
+      "comparisons": {
+        "crs": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4326",
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": "W.m-2.Sr-1",
+          "basis": "WCS declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "disagree",
+          "declaration_status": "agree",
+          "reference_status": "disagree",
+          "observed": [
+            0.001,
+            0.001
+          ],
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "agree",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": -99999.0,
+          "basis": "WCS declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        },
+        "extent": {
+          "status": "unverified",
+          "nonempty_coordinate_intersection": true,
+          "intersection_coordinate_area": 0.24950024999999762,
+          "basis": "conditional nominal lon/lat only; datum operation not accepted",
+          "decision": "Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap."
+        },
+        "alignment": {
+          "status": "unverified",
+          "reason": "different pixel spacing",
+          "nominal_grid_status": "disagree",
+          "decision": "Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum."
+        }
+      },
+      "status": "disagree",
+      "crs_detail": {
+        "datum": "Geocentric Datum of Australia 1994",
+        "axes": [
+          {
+            "name": "Geodetic latitude",
+            "unit": "degree",
+            "direction": "north"
+          },
+          {
+            "name": "Geodetic longitude",
+            "unit": "degree",
+            "direction": "east"
+          }
+        ],
+        "coordinate_epoch": "unverified: not read by this adapter"
+      }
+    },
+    {
+      "path": "rasters/ga_tmi_regional.tif",
+      "declaration": {},
+      "sha256": "a6b742a77789b8b29f84eede9ed2e99a1eeb2ce9b461b5c05bba1f58fe1dd82d",
+      "kind": "raster",
+      "crs": "EPSG:4283",
+      "bounds": [
+        120.74982664999999,
+        -31.94974495,
+        122.44975864999999,
+        -30.49980295
+      ],
+      "resolution": [
+        0.0008333,
+        0.0008333
+      ],
+      "transform": [
+        0.0008333,
+        0.0,
+        120.74982664999999,
+        0.0,
+        -0.0008333,
+        -30.49980295
+      ],
+      "shape": [
+        1740,
+        2040
+      ],
+      "bands": [
+        {
+          "band": 1,
+          "nodata": -99999.0,
+          "units": null,
+          "sentinel_count": 0,
+          "mask_count": 0,
+          "nonfinite_count": 0
+        }
+      ],
+      "units": null,
+      "nodata": -99999.0,
+      "tags": {
+        "TIFFTAG_XRESOLUTION": "1",
+        "TIFFTAG_YRESOLUTION": "1",
+        "TIFFTAG_RESOLUTIONUNIT": "1 (unitless)",
+        "AREA_OR_POINT": "Area"
+      },
+      "band_tags": {},
+      "declaration_comparisons": {
+        "crs": {
+          "status": "unverified",
+          "band_observations": null,
+          "observed": "EPSG:4283",
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "unverified",
+          "band_observations": null,
+          "observed": [
+            0.0008333,
+            0.0008333
+          ],
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "unverified",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        }
+      },
+      "reference_comparisons": {
+        "crs": {
+          "status": "disagree",
+          "expected": "EPSG:4326"
+        },
+        "resolution": {
+          "status": "disagree",
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ]
+        }
+      },
+      "comparisons": {
+        "crs": {
+          "status": "disagree",
+          "declaration_status": "unverified",
+          "reference_status": "disagree",
+          "observed": "EPSG:4283",
+          "expected": "EPSG:4326",
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": [
+            null
+          ],
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "disagree",
+          "declaration_status": "unverified",
+          "reference_status": "disagree",
+          "observed": [
+            0.0008333,
+            0.0008333
+          ],
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "unverified",
+          "band_observations": [
+            -99999.0
+          ],
+          "observed": -99999.0,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        },
+        "extent": {
+          "status": "unverified",
+          "nonempty_coordinate_intersection": true,
+          "intersection_coordinate_area": 0.25,
+          "basis": "conditional nominal lon/lat only; datum operation not accepted",
+          "decision": "Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap."
+        },
+        "alignment": {
+          "status": "unverified",
+          "reason": "different pixel spacing",
+          "nominal_grid_status": "disagree",
+          "decision": "Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum."
+        }
+      },
+      "status": "disagree",
+      "crs_detail": {
+        "datum": "Geocentric Datum of Australia 1994",
+        "axes": [
+          {
+            "name": "Geodetic latitude",
+            "unit": "degree",
+            "direction": "north"
+          },
+          {
+            "name": "Geodetic longitude",
+            "unit": "degree",
+            "direction": "east"
+          }
+        ],
+        "coordinate_epoch": "unverified: not read by this adapter"
+      }
+    },
+    {
+      "path": "vectors/ga_ozmin.geojson",
+      "declaration": {},
+      "sha256": "e02476fa2263f3b1d187d09e8664c24f525eccf65d7be97bc1b57272fe072ba8",
+      "kind": "vector",
+      "crs": null,
+      "coordinate_assumption": "RFC7946 WGS84 longitude/latitude; not an explicit EPSG declaration",
+      "bounds": [
+        120.4951,
+        -31.9454,
+        122.5808,
+        -30.5005
+      ],
+      "feature_count": 394,
+      "missing_geometry": 0,
+      "declaration_comparisons": {
+        "crs": {
+          "status": "unverified",
+          "band_observations": null,
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": null,
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "unverified",
+          "band_observations": null,
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "unverified",
+          "band_observations": null,
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        }
+      },
+      "reference_comparisons": {
+        "crs": {
+          "status": "unverified",
+          "expected": "EPSG:4326"
+        },
+        "resolution": {
+          "status": "unverified",
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ]
+        }
+      },
+      "comparisons": {
+        "crs": {
+          "status": "unverified",
+          "declaration_status": "unverified",
+          "reference_status": "unverified",
+          "observed": null,
+          "expected": "EPSG:4326",
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Confirm datum, coordinate epoch and acceptable location error before conversion."
+        },
+        "units": {
+          "status": "unverified",
+          "band_observations": null,
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Obtain authoritative VARIABLE unit; map-coordinate units are insufficient."
+        },
+        "resolution": {
+          "status": "unverified",
+          "declaration_status": "unverified",
+          "reference_status": "unverified",
+          "observed": null,
+          "expected": [
+            0.004166666666666667,
+            0.004166666666666667
+          ],
+          "basis": "reference-file diagnostic; different is not scientifically invalid",
+          "decision": "Choose target grid spacing in its native unit; do not infer metres from filename."
+        },
+        "nodata": {
+          "status": "unverified",
+          "band_observations": null,
+          "observed": null,
+          "expected": null,
+          "basis": "no independent declaration",
+          "decision": "Confirm sentinel, mask and validity; absence is not zero missing values."
+        },
+        "extent": {
+          "status": "unverified",
+          "nonempty_coordinate_intersection": true,
+          "intersection_coordinate_area": 0.25,
+          "basis": "conditional nominal lon/lat only; datum operation not accepted",
+          "decision": "Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap."
+        },
+        "alignment": {
+          "status": "unverified",
+          "decision": "Not a selected single raster grid; alignment is not established."
+        }
+      },
+      "status": "unverified"
+    }
+  ],
+  "manifest": {
+    "sha256": "b3d12345b4620c579e78a1af89c4125e91217ca7412e1ef912cdd80e3d3c097c",
+    "entries": 21,
+    "verified": 21
+  },
+  "datum_operations": {
+    "sample": [
+      121.65,
+      -31.25
+    ],
+    "available": [
+      {
+        "description": "GDA94 to WGS 84 (1) (with axis order normalized for visualization)",
+        "accuracy_m": 3.0,
+        "sample_displacement_m": 0.0,
+        "definition": "proj=noop ellps=GRS80"
+      },
+      {
+        "description": "GDA94 to WGS 84 (2) (with axis order normalized for visualization)",
+        "accuracy_m": 3.0,
+        "sample_displacement_m": 1.7799826768004232,
+        "definition": "proj=pipeline step proj=unitconvert xy_in=deg xy_out=rad step proj=push v_3 step proj=cart ellps=GRS80 step proj=helmert x=0.06155 y=-0.01087 z=-0.04019 rx=-0.0394924 ry=-0.0327221 rz=-0.0328979 s=-0.009994 convention=coordinate_frame step inv proj=cart ellps=WGS84 step proj=pop v_3 step proj=unitconvert xy_in=rad xy_out=deg"
+      }
+    ],
+    "unavailable": [
+      "GDA94 to WGS 84 (3)"
+    ],
+    "accepted_operation": null,
+    "actual_offset_status": "unverified",
+    "limit": "No staged independent published datum-offset reference. Computed operation displacement is not actual positional accuracy."
+  },
+  "checks": [
+    {
+      "id": "manifest",
+      "quantity": {
+        "ko": "Input manifest hashes match"
+      },
+      "observed": 21,
+      "expected": 21,
+      "tolerance": "exact",
+      "passed": true,
+      "reference": "MANIFEST.sha256; 21 entries independently counted before execution"
+    },
+    {
+      "id": "crs-declarations",
+      "quantity": {
+        "ko": "TIFF vs six WCS CRS declarations"
+      },
+      "observed": 6,
+      "expected": 6,
+      "tolerance": "exact",
+      "passed": true,
+      "reference": "Six staged DescribeCoverage Envelope EPSG identifiers"
+    },
+    {
+      "id": "pixel-spacing",
+      "quantity": {
+        "ko": "Maximum TIFF vs WCS pixel-spacing error"
+      },
+      "observed": 4.336808689942018e-19,
+      "expected": 0,
+      "tolerance": "1e-12 degree",
+      "passed": true,
+      "reference": "WCS offsetVector with explicit Lat Long axis labels"
+    },
+    {
+      "id": "nodata-declarations",
+      "quantity": {
+        "ko": "TIFF vs six WCS nodata declarations"
+      },
+      "observed": 6,
+      "expected": 6,
+      "tolerance": "exact",
+      "passed": true,
+      "reference": "Six WCS swe:nilValue entries"
+    },
+    {
+      "id": "mask-counts",
+      "quantity": {
+        "ko": "Maximum sentinel vs GDAL mask count difference"
+      },
+      "observed": 0,
+      "expected": 0,
+      "tolerance": "0 cells",
+      "passed": true,
+      "reference": "Direct array sentinel counts vs read_masks; per band"
+    },
+    {
+      "id": "radiometry-counts",
+      "quantity": {
+        "ko": "K/Th/U each contain 347 sentinel cells"
+      },
+      "observed": 0,
+      "expected": 0,
+      "tolerance": "0 cells",
+      "passed": true,
+      "reference": "Independent reader array counts before this run"
+    },
+    {
+      "id": "bbox-intersection",
+      "quantity": {
+        "ko": "Maximum bbox intersection area error"
+      },
+      "observed": 0.0,
+      "expected": 0,
+      "tolerance": "1e-10 degree²",
+      "passed": true,
+      "reference": "Shapely rectangle intersection vs closed max/min formula; conditional nominal coordinates only"
+    },
+    {
+      "id": "half-cell",
+      "quantity": {
+        "ko": "Gravity vs DEM nominal origin residual"
+      },
+      "observed": 4.547473508864641e-13,
+      "expected": 0,
+      "tolerance": "1e-8 pixels",
+      "passed": true,
+      "reference": "Independent metadata subtraction: half-cell shift; does not resolve CRS difference"
+    },
+    {
+      "id": "variable-units",
+      "quantity": {
+        "ko": "All nine files retain unverified variable units"
+      },
+      "observed": 9,
+      "expected": 9,
+      "tolerance": "exact",
+      "passed": true,
+      "reference": "Band units absent; WCS GRAY_INDEX W.m-2.Sr-1 is not validated variable units"
+    },
+    {
+      "id": "dem-nodata",
+      "quantity": {
+        "ko": "DEM absent nodata stays unverified"
+      },
+      "observed": 1,
+      "expected": 1,
+      "tolerance": "exact",
+      "passed": true,
+      "reference": "Independent raster header inspection"
+    },
+    {
+      "id": "datum-unverified",
+      "quantity": {
+        "ko": "Eight non-reference extents retain datum uncertainty"
+      },
+      "observed": 8,
+      "expected": 8,
+      "tolerance": "exact",
+      "passed": true,
+      "reference": "Seven GDA94 rasters + GeoJSON without explicit CRS vs WGS84 DEM"
+    }
+  ],
+  "check_plan_sha256": "bb86af1ae555c501562f6b12a5ddd6fddb41ee026f231df24fe4eb7b663b8c0d"
+}

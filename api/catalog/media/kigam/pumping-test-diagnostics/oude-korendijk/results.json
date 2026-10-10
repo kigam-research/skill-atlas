@@ -1,0 +1,281 @@
+{
+  "config": {
+    "title": "Oude Korendijk \u2014 confined candidate",
+    "schedule": [
+      [
+        0,
+        788
+      ]
+    ],
+    "models": [
+      "theis",
+      "cooper-jacob"
+    ],
+    "aquifer_thickness_m": 7,
+    "well_radius_m": 0.2,
+    "screen": "fully penetrating per notebook",
+    "observations": [
+      {
+        "id": "p30",
+        "file": "data/piezometer_h30.txt",
+        "skiprows": 1,
+        "time_to_day": 0.0006944444444444445,
+        "drawdown_sign": -1,
+        "distance_m": 30,
+        "cj_start_day": 0.010416666666666666
+      },
+      {
+        "id": "p90",
+        "file": "data/piezometer_h90.txt",
+        "skiprows": 1,
+        "time_to_day": 0.0006944444444444445,
+        "drawdown_sign": -1,
+        "distance_m": 90,
+        "cj_start_day": 0.08333333333333333
+      }
+    ],
+    "reference_checks": [
+      {
+        "id": "theis-t-reference",
+        "quantity": "Joint Theis T",
+        "model": "theis",
+        "key": "T_m2_day",
+        "expected": 462.6250347025864,
+        "relative_tolerance": 0.01,
+        "unit": "m2/d"
+      },
+      {
+        "id": "theis-s-reference",
+        "quantity": "Joint Theis S",
+        "model": "theis",
+        "key": "S",
+        "expected": 0.00017786101350513936,
+        "relative_tolerance": 0.01,
+        "unit": "-"
+      },
+      {
+        "id": "theis-rmse-reference",
+        "quantity": "Joint Theis RMSE",
+        "model": "theis",
+        "key": "rmse_m",
+        "expected": 0.050059911747508554,
+        "absolute_tolerance": 0.001,
+        "unit": "m"
+      }
+    ],
+    "reference": "TTim e75759040362f010fc0b1a4e74cb20f9b32ee0c1 confined1_oude_korendijk.ipynb, joint no-storage calibration and comparison table; T=7*K, S=7*Ss"
+  },
+  "time_origin_day": 0.0,
+  "inputs": [
+    {
+      "file": "data/piezometer_h30.txt",
+      "sha256": "a705d2fca98d033f840c06604765abbc01014509b30d2d1425626ea50eb3edb5",
+      "original_rows": 34,
+      "selected_rows": 34,
+      "distance_m": 30,
+      "time_to_day": 0.0006944444444444445,
+      "drawdown_sign": -1
+    },
+    {
+      "file": "data/piezometer_h90.txt",
+      "sha256": "3d31d0f7ac1ff9858a5883e352fc62ccb5d5e4cf4be93333bf36d43f0da4eaa5",
+      "original_rows": 35,
+      "selected_rows": 35,
+      "distance_m": 90,
+      "time_to_day": 0.0006944444444444445,
+      "drawdown_sign": -1
+    }
+  ],
+  "models": {
+    "theis": {
+      "T_m2_day": 462.61651510117076,
+      "S": 0.0001778778785469816,
+      "model": "theis",
+      "rmse_m": 0.0500602846366265,
+      "n": 69,
+      "max_u": 1.2457928060916341,
+      "hit_bounds": false,
+      "jacobian_condition": 7.678483058805469
+    },
+    "cooper-jacob": {
+      "T_m2_day": 466.34378753145023,
+      "S": 0.0001809733550924385,
+      "model": "cooper-jacob",
+      "rmse_m": 0.06023253255568261,
+      "n": 29,
+      "max_u": 0.009430065643256108,
+      "hit_bounds": false,
+      "jacobian_condition": 22.64351710769817
+    },
+    "theis-cj-window": {
+      "T_m2_day": 465.4523607153606,
+      "S": 0.00018316412026100364,
+      "model": "theis",
+      "rmse_m": 0.06022615550142008,
+      "n": 29,
+      "max_u": 0.009562499834573301,
+      "hit_bounds": false,
+      "jacobian_condition": 22.903136867888342
+    }
+  },
+  "window_sensitivity": {
+    "theis": {
+      "rule": "trim first 25% of log-time span, per well; not a confidence interval",
+      "alternate": {
+        "T_m2_day": 482.2329137916131,
+        "S": 0.00014685474681361448,
+        "model": "theis",
+        "rmse_m": 0.05227357790376726,
+        "n": 55,
+        "max_u": 0.11840155229596509,
+        "hit_bounds": false,
+        "jacobian_condition": 10.487890574410008
+      },
+      "ranges": {
+        "T_m2_day": [
+          462.61651510117076,
+          482.2329137916131
+        ],
+        "S": [
+          0.00014685474681361448,
+          0.0001778778785469816
+        ]
+      }
+    }
+  },
+  "windows": {
+    "cooper-jacob": [
+      {
+        "id": "p30",
+        "start_day": 0.010416666666666666
+      },
+      {
+        "id": "p90",
+        "start_day": 0.08333333333333333
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "theis-tabulation",
+      "quantity": "Maximum relative E1 error",
+      "observed": 8.881784197001252e-16,
+      "expected": 0,
+      "tolerance": "<=1e-6",
+      "unit": "-",
+      "passed": true,
+      "reference": "E1 decimal tabulation at u=0.001,0.01,0.1,1,10"
+    },
+    {
+      "id": "derivative-plateau",
+      "quantity": "Synthetic late Theis derivative relative error",
+      "observed": 1.2831771689647553e-07,
+      "expected": 0,
+      "tolerance": "<=0.001",
+      "unit": "-",
+      "passed": true,
+      "reference": "ds/dln(t)=Q/(4*pi*T)*exp(-u)"
+    },
+    {
+      "id": "hantush-steady",
+      "quantity": "Hantush steady-limit relative error",
+      "observed": 2.220446049250313e-16,
+      "expected": 0,
+      "tolerance": "<=1e-8",
+      "unit": "-",
+      "passed": true,
+      "reference": "W(0,r/B)=2*K0(r/B)"
+    },
+    {
+      "id": "recovery-identity",
+      "quantity": "Recovery vs two-step identity maximum absolute error",
+      "observed": 0.0,
+      "expected": 0,
+      "tolerance": "<=1e-12 m",
+      "unit": "m",
+      "passed": true,
+      "reference": "Theis(t,Q)-Theis(t-tp,Q)"
+    },
+    {
+      "id": "theis-t-reference",
+      "quantity": "Joint Theis T",
+      "observed": 462.61651510117076,
+      "expected": 462.6250347025864,
+      "tolerance": "absolute +/- 4.62625034703",
+      "unit": "m2/d",
+      "passed": true,
+      "reference": "TTim e75759040362f010fc0b1a4e74cb20f9b32ee0c1 confined1_oude_korendijk.ipynb, joint no-storage calibration and comparison table; T=7*K, S=7*Ss"
+    },
+    {
+      "id": "theis-s-reference",
+      "quantity": "Joint Theis S",
+      "observed": 0.0001778778785469816,
+      "expected": 0.00017786101350513936,
+      "tolerance": "absolute +/- 1.77861013505e-06",
+      "unit": "-",
+      "passed": true,
+      "reference": "TTim e75759040362f010fc0b1a4e74cb20f9b32ee0c1 confined1_oude_korendijk.ipynb, joint no-storage calibration and comparison table; T=7*K, S=7*Ss"
+    },
+    {
+      "id": "theis-rmse-reference",
+      "quantity": "Joint Theis RMSE",
+      "observed": 0.0500602846366265,
+      "expected": 0.050059911747508554,
+      "tolerance": "absolute +/- 0.001",
+      "unit": "m",
+      "passed": true,
+      "reference": "TTim e75759040362f010fc0b1a4e74cb20f9b32ee0c1 confined1_oude_korendijk.ipynb, joint no-storage calibration and comparison table; T=7*K, S=7*Ss"
+    },
+    {
+      "id": "cj-theis-t",
+      "quantity": "CJ vs Theis T on same IARF windows relative difference",
+      "observed": 0.0019151837896353996,
+      "expected": 0,
+      "tolerance": "<=0.05",
+      "unit": "-",
+      "passed": true,
+      "reference": "same predeclared late windows; asymptotic method comparison"
+    },
+    {
+      "id": "cj-validity",
+      "quantity": "Maximum fitted Cooper-Jacob u",
+      "observed": 0.009430065643256108,
+      "expected": "<=0.01",
+      "tolerance": "upper bound",
+      "unit": "-",
+      "passed": true,
+      "reference": "u=r^2*S/(4*T*t)"
+    }
+  ],
+  "plot_stats": [
+    {
+      "id": "p30",
+      "nonpositive_drawdown": 0,
+      "nonpositive_derivative": 0,
+      "missing_derivative": 2
+    },
+    {
+      "id": "p90",
+      "nonpositive_drawdown": 0,
+      "nonpositive_derivative": 1,
+      "missing_derivative": 2
+    }
+  ],
+  "units": {
+    "time": "d",
+    "length": "m",
+    "rate": "m3/d",
+    "T": "m2/d",
+    "S": "dimensionless",
+    "B": "m"
+  },
+  "limits": [
+    "Window envelopes are NOT confidence intervals.",
+    "Derivative cues are nonunique; no expert review.",
+    "Line-source models omit well storage, skin, partial penetration, aquitard storage and delayed yield."
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "checks": [
+    {
+      "id": "sample-alignment",
+      "quantity": "DL/StatDA/common sample counts and missing IDs",
+      "observed": "606/605/605; DL-only IDs=81",
+      "expected": "606/605/605; DL-only IDs=81",
+      "passed": true,
+      "tolerance": "exact",
+      "reference": "Two staged R binaries, aligned on unique ID, not row position"
+    },
+    {
+      "id": "coordinate-packaging",
+      "quantity": "X exact; StatDA Y rounded to 10000 m",
+      "observed": 0.0,
+      "expected": 0,
+      "passed": true,
+      "tolerance": "0 m",
+      "reference": "Observed packaging relationship; NOT a CRS validation"
+    },
+    {
+      "id": "censor-agreement",
+      "quantity": "Zero vs half-DL mask mismatches on 605 common IDs",
+      "observed": 0,
+      "expected": 0,
+      "passed": true,
+      "tolerance": "exact",
+      "reference": "StatDA half-DL values independently compared with robCompositions raw DL attributes; includes 54 DL-bearing fields"
+    },
+    {
+      "id": "observed-agreement",
+      "quantity": "Maximum noncensored concentration difference after XRF conversion",
+      "observed": 5.820766091346741e-11,
+      "expected": 0,
+      "passed": true,
+      "tolerance": "absolute 1e-9 in harmonized units",
+      "reference": "StatDA chorizon; robCompositions _XRF wt% multiplied by 10000; all other fields unchanged"
+    },
+    {
+      "id": "clr-zero",
+      "quantity": "Maximum absolute clr row sum",
+      "observed": 4.884981308350689e-15,
+      "expected": 0,
+      "passed": true,
+      "tolerance": "absolute 1e-9",
+      "reference": "Analytical identity: centered log ratios; orthonormal Helmert basis; multiplicative mass conservation"
+    },
+    {
+      "id": "ilr-isometry",
+      "quantity": "Maximum pairwise clr/ilr distance difference",
+      "observed": 1.7763568394002505e-15,
+      "expected": 0,
+      "passed": true,
+      "tolerance": "absolute 1e-9",
+      "reference": "Analytical identity: centered log ratios; orthonormal Helmert basis; multiplicative mass conservation"
+    },
+    {
+      "id": "closure",
+      "quantity": "Maximum observed sub-sum difference after replacement",
+      "observed": 5.684341886080802e-14,
+      "expected": 0,
+      "passed": true,
+      "tolerance": "absolute 1e-9",
+      "reference": "Analytical identity: centered log ratios; orthonormal Helmert basis; multiplicative mass conservation"
+    },
+    {
+      "id": "ba-method",
+      "quantity": "Fraction total INAA Ba >= aqua-regia Ba",
+      "observed": 1.0,
+      "expected": ">=0.90",
+      "passed": true,
+      "tolerance": "lower bound 0.90",
+      "reference": "Declared domain sanity expectation: partial digestion should generally recover less; not a certified recovery test"
+    },
+    {
+      "id": "anomaly-reference",
+      "quantity": "High-Ni count vs direct sorted-order median/MAD calculation",
+      "observed": 60,
+      "expected": 60,
+      "passed": true,
+      "tolerance": "exact",
+      "reference": "Independent direct order-statistic implementation of fixed ln(Ni)>median+2 unscaled MAD"
+    }
+  ],
+  "passed": true,
+  "ba_ratio": {
+    "min": 1.7048346055979644,
+    "median": 13.095796161807023,
+    "max": 98.83720930232559
+  },
+  "coordinate_difference_DL_minus_StatDA_m": {
+    "min": -5000.0,
+    "max": 4950.0
+  }
+}

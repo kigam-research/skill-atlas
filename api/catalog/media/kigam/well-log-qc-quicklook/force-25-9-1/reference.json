@@ -1,0 +1,141 @@
+{
+  "checks": [
+    {
+      "id": "csv-values",
+      "quantity": "LAS vs CSV curve values: maximum absolute difference",
+      "observed": 0.0,
+      "expected": 0,
+      "tolerance": "<= 1e-4",
+      "passed": true,
+      "unit": "native curve units",
+      "reference": "FORCE train.csv independently exported from supplied LAS; seven curves on shared rows"
+    },
+    {
+      "id": "csv-null-fraction",
+      "quantity": "Maximum per-curve missing-fraction difference",
+      "observed": 0.0,
+      "expected": 0,
+      "tolerance": "<= 1e-12",
+      "passed": true,
+      "unit": "fraction",
+      "reference": "Identical matched rows in train.csv; null masks also retained in reference.json"
+    },
+    {
+      "id": "csv-match",
+      "quantity": "Uniquely matched CSV row fraction",
+      "observed": 1.0,
+      "expected": 1,
+      "tolerance": "depth <= 0.001 m; one-to-one",
+      "passed": true,
+      "unit": "fraction",
+      "reference": "LAS DEPTH_MD vs CSV DEPTH_MD, no interpolation"
+    },
+    {
+      "id": "header-start-stop",
+      "quantity": "Maximum first/last vs STRT/STOP residual",
+      "observed": 0.11280470000019704,
+      "expected": 0,
+      "tolerance": "<= 1e-6",
+      "passed": false,
+      "unit": "m",
+      "reference": "LAS header versus parsed first-column measurements"
+    },
+    {
+      "id": "median-step",
+      "quantity": "Median signed increment vs STEP residual",
+      "observed": 4.365952044338428e-14,
+      "expected": 0,
+      "tolerance": "<= 1e-6",
+      "passed": true,
+      "unit": "m",
+      "reference": "LAS STEP header versus independently recomputed increments"
+    },
+    {
+      "id": "sonic-roundtrip",
+      "quantity": "Sonic conversion round-trip error",
+      "observed": 0.0,
+      "expected": 0,
+      "tolerance": "<= 1e-12",
+      "passed": true,
+      "unit": "us/ft",
+      "reference": "International foot 0.3048 m exactly; constructed 35/100/250 us/ft"
+    }
+  ],
+  "per_curve": [
+    {
+      "curve": "GR",
+      "shared_finite": 15743,
+      "max_abs_difference": 0.0,
+      "las_null_fraction": 0.0,
+      "csv_null_fraction": 0.0,
+      "null_mask_disagreement": 0
+    },
+    {
+      "curve": "RHOB",
+      "shared_finite": 3685,
+      "max_abs_difference": 0.0,
+      "las_null_fraction": 0.7659277139045925,
+      "csv_null_fraction": 0.7659277139045925,
+      "null_mask_disagreement": 0
+    },
+    {
+      "curve": "NPHI",
+      "shared_finite": 3656,
+      "max_abs_difference": 0.0,
+      "las_null_fraction": 0.7677698024518834,
+      "csv_null_fraction": 0.7677698024518834,
+      "null_mask_disagreement": 0
+    },
+    {
+      "curve": "DTC",
+      "shared_finite": 4174,
+      "max_abs_difference": 0.0,
+      "las_null_fraction": 0.7348662897795846,
+      "csv_null_fraction": 0.7348662897795846,
+      "null_mask_disagreement": 0
+    },
+    {
+      "curve": "RDEP",
+      "shared_finite": 15743,
+      "max_abs_difference": 0.0,
+      "las_null_fraction": 0.0,
+      "csv_null_fraction": 0.0,
+      "null_mask_disagreement": 0
+    },
+    {
+      "curve": "CALI",
+      "shared_finite": 9808,
+      "max_abs_difference": 0.0,
+      "las_null_fraction": 0.3769929492472845,
+      "csv_null_fraction": 0.3769929492472845,
+      "null_mask_disagreement": 0
+    },
+    {
+      "curve": "BS",
+      "shared_finite": 15743,
+      "max_abs_difference": 0.0,
+      "las_null_fraction": 0.0,
+      "csv_null_fraction": 0.0,
+      "null_mask_disagreement": 0
+    }
+  ],
+  "csv_rows": 15743,
+  "matched_rows": 15743,
+  "one_to_one": true,
+  "max_match_distance_m": 0.00012109999988751952,
+  "las_rows": 16132,
+  "depth_index_vs_depth_md_max_difference_m": 0.00012109999988751952,
+  "location": {
+    "point": [
+      2.7080268980640874,
+      59.44911000202923
+    ],
+    "approximate": true,
+    "assumption": "Median XY from CSV; ED50 / UTM 31N (EPSG:23031) assumed, no surveyed CRS verification"
+  },
+  "input_sha256": {
+    "las/25_9-1.las": "5604b035b6d6406eb51b01796d48688505a1b56cc77e50ec17dcf00cb40252ce",
+    "train.zip": "e996c8466f2d0dc7116daa71485cc90c31fcfac6345a5bb33165026478b642e9"
+  },
+  "result": "failed"
+}

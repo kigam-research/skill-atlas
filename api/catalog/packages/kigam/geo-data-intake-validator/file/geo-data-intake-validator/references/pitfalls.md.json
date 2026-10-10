@@ -1,0 +1,1 @@
+{"skillId":"kigam/geo-data-intake-validator","path":"geo-data-intake-validator/references/pitfalls.md","size":337,"content":"WCS의 범용 GRAY_INDEX 단위나 파일명은 물리 단위의 독립 확인이 아닙니다.\nGDA94→WGS84 기본 no-op을 위치 차이 없음으로 해석하지 않습니다.\nnodata 미선언을 결측값 0개로 해석하지 않습니다.\n회전 격자는 north-up 정합 공식을 적용하지 말고 미확인으로 남깁니다."}

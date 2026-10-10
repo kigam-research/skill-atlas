@@ -1,0 +1,120 @@
+{
+  "n": 606,
+  "ternary_undefined_n": 0,
+  "elements": [
+    "As",
+    "Cd",
+    "Co",
+    "Cu",
+    "Ni",
+    "Pb",
+    "Zn"
+  ],
+  "medium": "C-horizon soil; Kola Project 1993-1998",
+  "metadata": {
+    "medium": "C-horizon soil; Kola Project 1993-1998",
+    "id": "*ID",
+    "x": "XCOO",
+    "y": "YCOO",
+    "crs": "source projected metres; CRS unverified",
+    "coordinate_unit": "m",
+    "anomaly_element": "Ni",
+    "ternary_components": [
+      "Co",
+      "Cu",
+      "Ni"
+    ],
+    "analytes": {
+      "As": {
+        "element": "As",
+        "unit": "mg/kg",
+        "method": "aqua-regia ICP",
+        "dl": 0.1,
+        "zero_is_censored": true
+      },
+      "Cd": {
+        "element": "Cd",
+        "unit": "mg/kg",
+        "method": "aqua-regia ICP",
+        "dl": 0.001,
+        "zero_is_censored": true
+      },
+      "Co": {
+        "element": "Co",
+        "unit": "mg/kg",
+        "method": "aqua-regia ICP",
+        "dl": 0.2,
+        "zero_is_censored": true
+      },
+      "Cu": {
+        "element": "Cu",
+        "unit": "mg/kg",
+        "method": "aqua-regia ICP",
+        "dl": 0.5,
+        "zero_is_censored": true
+      },
+      "Ni": {
+        "element": "Ni",
+        "unit": "mg/kg",
+        "method": "aqua-regia ICP",
+        "dl": 1.0,
+        "zero_is_censored": true
+      },
+      "Pb": {
+        "element": "Pb",
+        "unit": "mg/kg",
+        "method": "aqua-regia ICP",
+        "dl": 0.2,
+        "zero_is_censored": true
+      },
+      "Zn": {
+        "element": "Zn",
+        "unit": "mg/kg",
+        "method": "aqua-regia ICP",
+        "dl": 0.5,
+        "zero_is_censored": true
+      }
+    }
+  },
+  "replacement": {
+    "method": "DL-fraction multiplicative, preserves observed sub-sum",
+    "fraction": 0.5,
+    "censored_counts": {
+      "As": 10,
+      "Cd": 0,
+      "Co": 0,
+      "Cu": 0,
+      "Ni": 0,
+      "Pb": 0,
+      "Zn": 0
+    }
+  },
+  "threshold": {
+    "element": "Ni",
+    "rule": "ln(observed concentration)>median+2*unscaled MAD",
+    "log_value": 3.7598810570085353,
+    "mgkg": 42.9433178682914,
+    "MAD_log": 0.41701925235934345,
+    "counts": {
+      "below-threshold": 546,
+      "high-Ni": 60
+    }
+  },
+  "pca": {
+    "method": "MinCovDet covariance in ilr, seed=17",
+    "support_n": 507,
+    "eigenvalues": [
+      0.6455850999497731,
+      0.2550075330015349,
+      0.1169254983591821,
+      0.09668354838878528,
+      0.06753082564126484,
+      0.023545831954246012
+    ]
+  },
+  "checks": {
+    "clr-zero": 4.884981308350689e-15,
+    "ilr-isometry": 1.7763568394002505e-15,
+    "closure": 5.684341886080802e-14
+  }
+}

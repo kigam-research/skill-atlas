@@ -1,0 +1,341 @@
+{
+  "config": {
+    "title": "Dalem \u2014 leaky candidate (no aquitard storage)",
+    "schedule": [
+      [
+        0,
+        761
+      ],
+      [
+        0.34,
+        0
+      ]
+    ],
+    "models": [
+      "theis",
+      "hantush-jacob"
+    ],
+    "aquifer_thickness_m": 37,
+    "well_radius_m": null,
+    "screen": "fully penetrating per notebook; no measured well radius supplied",
+    "observations": [
+      {
+        "id": "p30",
+        "file": "data/dalem_p30.txt",
+        "skiprows": 1,
+        "time_to_day": 1,
+        "drawdown_sign": -1,
+        "distance_m": 30
+      },
+      {
+        "id": "p60",
+        "file": "data/dalem_p60.txt",
+        "skiprows": 1,
+        "time_to_day": 1,
+        "drawdown_sign": -1,
+        "distance_m": 60
+      },
+      {
+        "id": "p90",
+        "file": "data/dalem_p90.txt",
+        "skiprows": 1,
+        "time_to_day": 1,
+        "drawdown_sign": -1,
+        "distance_m": 90
+      },
+      {
+        "id": "p120",
+        "file": "data/dalem_p120.txt",
+        "skiprows": 1,
+        "time_to_day": 1,
+        "drawdown_sign": -1,
+        "distance_m": 120
+      }
+    ],
+    "reference_checks": [
+      {
+        "id": "hantush-t-reference",
+        "quantity": "Joint Hantush-Jacob T",
+        "model": "hantush-jacob",
+        "key": "T_m2_day",
+        "expected": 1677.2876980326907,
+        "relative_tolerance": 0.02,
+        "unit": "m2/d"
+      },
+      {
+        "id": "hantush-s-reference",
+        "quantity": "Joint Hantush-Jacob S",
+        "model": "hantush-jacob",
+        "key": "S",
+        "expected": 0.0017620324728680494,
+        "relative_tolerance": 0.02,
+        "unit": "-"
+      },
+      {
+        "id": "hantush-b-reference",
+        "quantity": "Joint Hantush-Jacob leakage factor B",
+        "model": "hantush-jacob",
+        "key": "B_m",
+        "expected": 745.3152751970414,
+        "relative_tolerance": 0.05,
+        "unit": "m"
+      },
+      {
+        "id": "hantush-rmse",
+        "quantity": "Joint Hantush-Jacob RMSE",
+        "model": "hantush-jacob",
+        "key": "rmse_m",
+        "maximum": 0.0065,
+        "unit": "m"
+      }
+    ],
+    "reference": "TTim e75759040362f010fc0b1a4e74cb20f9b32ee0c1 leaky1_dalem.ipynb step 5.2 no-aquitard-storage joint fit; T=37*K, S=37*Ss, B=sqrt(T*c)"
+  },
+  "time_origin_day": 0.0,
+  "inputs": [
+    {
+      "file": "data/dalem_p30.txt",
+      "sha256": "225b44964e677d64432ac17d588c3745d83c26c92c8a1568bd1e2b20a964296e",
+      "original_rows": 14,
+      "selected_rows": 14,
+      "distance_m": 30,
+      "time_to_day": 1,
+      "drawdown_sign": -1
+    },
+    {
+      "file": "data/dalem_p60.txt",
+      "sha256": "b34a9abadec7a2b389210436ffd519262129c8682d4909d4a3bac9f9166069b8",
+      "original_rows": 13,
+      "selected_rows": 13,
+      "distance_m": 60,
+      "time_to_day": 1,
+      "drawdown_sign": -1
+    },
+    {
+      "file": "data/dalem_p90.txt",
+      "sha256": "1960357654fb3e2ba31a827c0ea93fc58c38238374de619859e53d6b1c795b63",
+      "original_rows": 12,
+      "selected_rows": 12,
+      "distance_m": 90,
+      "time_to_day": 1,
+      "drawdown_sign": -1
+    },
+    {
+      "file": "data/dalem_p120.txt",
+      "sha256": "25f6c56854e91aac24d48aeb6ff90b7c4a5edb76dbeb17bb4de2b51bad51b679",
+      "original_rows": 12,
+      "selected_rows": 12,
+      "distance_m": 120,
+      "time_to_day": 1,
+      "drawdown_sign": -1
+    }
+  ],
+  "models": {
+    "theis": {
+      "T_m2_day": 1823.5982589748367,
+      "S": 0.001686554901375947,
+      "model": "theis",
+      "rmse_m": 0.007244992085491496,
+      "n": 51,
+      "max_u": 0.13317840407166542,
+      "hit_bounds": false,
+      "jacobian_condition": 9.58307705215788
+    },
+    "hantush-jacob": {
+      "T_m2_day": 1677.2758900601114,
+      "S": 0.0017620213965120826,
+      "B_m": 745.266727044632,
+      "model": "hantush-jacob",
+      "rmse_m": 0.005916848104727118,
+      "n": 51,
+      "max_u": 0.15127569805385235,
+      "hit_bounds": false,
+      "jacobian_condition": 17.640990081269887,
+      "c_day": 331.1455782148711
+    }
+  },
+  "window_sensitivity": {
+    "theis": {
+      "rule": "trim first 25% of log-time span, per well; not a confidence interval",
+      "alternate": {
+        "T_m2_day": 1796.5295819302466,
+        "S": 0.0018370198888080624,
+        "model": "theis",
+        "rmse_m": 0.0070309700475927744,
+        "n": 37,
+        "max_u": 0.07362274093592738,
+        "hit_bounds": false,
+        "jacobian_condition": 11.854902211276102
+      },
+      "ranges": {
+        "T_m2_day": [
+          1796.5295819302466,
+          1823.5982589748367
+        ],
+        "S": [
+          0.001686554901375947,
+          0.0018370198888080624
+        ]
+      }
+    },
+    "hantush-jacob": {
+      "rule": "trim first 25% of log-time span, per well; not a confidence interval",
+      "alternate": {
+        "T_m2_day": 1691.0036621578715,
+        "S": 0.0017721522278953527,
+        "B_m": 790.9024282944845,
+        "model": "hantush-jacob",
+        "rmse_m": 0.005877657482436841,
+        "n": 37,
+        "max_u": 0.07545516503828431,
+        "hit_bounds": false,
+        "jacobian_condition": 19.531397668252346,
+        "c_day": 369.9144272011123
+      },
+      "ranges": {
+        "T_m2_day": [
+          1677.2758900601114,
+          1691.0036621578715
+        ],
+        "S": [
+          0.0017620213965120826,
+          0.0017721522278953527
+        ],
+        "B_m": [
+          745.266727044632,
+          790.9024282944845
+        ],
+        "c_day": [
+          331.1455782148711,
+          369.9144272011123
+        ]
+      }
+    }
+  },
+  "windows": {},
+  "checks": [
+    {
+      "id": "theis-tabulation",
+      "quantity": "Maximum relative E1 error",
+      "observed": 8.881784197001252e-16,
+      "expected": 0,
+      "tolerance": "<=1e-6",
+      "unit": "-",
+      "passed": true,
+      "reference": "E1 decimal tabulation at u=0.001,0.01,0.1,1,10"
+    },
+    {
+      "id": "derivative-plateau",
+      "quantity": "Synthetic late Theis derivative relative error",
+      "observed": 1.2831771689647553e-07,
+      "expected": 0,
+      "tolerance": "<=0.001",
+      "unit": "-",
+      "passed": true,
+      "reference": "ds/dln(t)=Q/(4*pi*T)*exp(-u)"
+    },
+    {
+      "id": "hantush-steady",
+      "quantity": "Hantush steady-limit relative error",
+      "observed": 2.220446049250313e-16,
+      "expected": 0,
+      "tolerance": "<=1e-8",
+      "unit": "-",
+      "passed": true,
+      "reference": "W(0,r/B)=2*K0(r/B)"
+    },
+    {
+      "id": "recovery-identity",
+      "quantity": "Recovery vs two-step identity maximum absolute error",
+      "observed": 0.0,
+      "expected": 0,
+      "tolerance": "<=1e-12 m",
+      "unit": "m",
+      "passed": true,
+      "reference": "Theis(t,Q)-Theis(t-tp,Q)"
+    },
+    {
+      "id": "hantush-t-reference",
+      "quantity": "Joint Hantush-Jacob T",
+      "observed": 1677.2758900601114,
+      "expected": 1677.2876980326907,
+      "tolerance": "absolute +/- 33.5457539607",
+      "unit": "m2/d",
+      "passed": true,
+      "reference": "TTim e75759040362f010fc0b1a4e74cb20f9b32ee0c1 leaky1_dalem.ipynb step 5.2 no-aquitard-storage joint fit; T=37*K, S=37*Ss, B=sqrt(T*c)"
+    },
+    {
+      "id": "hantush-s-reference",
+      "quantity": "Joint Hantush-Jacob S",
+      "observed": 0.0017620213965120826,
+      "expected": 0.0017620324728680494,
+      "tolerance": "absolute +/- 3.52406494574e-05",
+      "unit": "-",
+      "passed": true,
+      "reference": "TTim e75759040362f010fc0b1a4e74cb20f9b32ee0c1 leaky1_dalem.ipynb step 5.2 no-aquitard-storage joint fit; T=37*K, S=37*Ss, B=sqrt(T*c)"
+    },
+    {
+      "id": "hantush-b-reference",
+      "quantity": "Joint Hantush-Jacob leakage factor B",
+      "observed": 745.266727044632,
+      "expected": 745.3152751970414,
+      "tolerance": "absolute +/- 37.2657637599",
+      "unit": "m",
+      "passed": true,
+      "reference": "TTim e75759040362f010fc0b1a4e74cb20f9b32ee0c1 leaky1_dalem.ipynb step 5.2 no-aquitard-storage joint fit; T=37*K, S=37*Ss, B=sqrt(T*c)"
+    },
+    {
+      "id": "hantush-rmse",
+      "quantity": "Joint Hantush-Jacob RMSE",
+      "observed": 0.005916848104727118,
+      "expected": "<= 0.0065",
+      "tolerance": "upper bound",
+      "unit": "m",
+      "passed": true,
+      "reference": "TTim e75759040362f010fc0b1a4e74cb20f9b32ee0c1 leaky1_dalem.ipynb step 5.2 no-aquitard-storage joint fit; T=37*K, S=37*Ss, B=sqrt(T*c)"
+    }
+  ],
+  "plot_stats": [
+    {
+      "id": "p30",
+      "nonpositive_drawdown": 0,
+      "nonpositive_derivative": 0,
+      "missing_derivative": 2
+    },
+    {
+      "id": "p60",
+      "nonpositive_drawdown": 0,
+      "nonpositive_derivative": 0,
+      "missing_derivative": 2
+    },
+    {
+      "id": "p90",
+      "nonpositive_drawdown": 0,
+      "nonpositive_derivative": 0,
+      "missing_derivative": 2
+    },
+    {
+      "id": "p120",
+      "nonpositive_drawdown": 0,
+      "nonpositive_derivative": 0,
+      "missing_derivative": 2
+    }
+  ],
+  "units": {
+    "time": "d",
+    "length": "m",
+    "rate": "m3/d",
+    "T": "m2/d",
+    "S": "dimensionless",
+    "B": "m"
+  },
+  "limits": [
+    "Window envelopes are NOT confidence intervals.",
+    "Derivative cues are nonunique; no expert review.",
+    "Line-source models omit well storage, skin, partial penetration, aquitard storage and delayed yield."
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3"
+  }
+}

@@ -1,0 +1,55 @@
+file,check,status,researcher_decision
+rasters/kambalda_dem_1s_sample.tif,crs,unverified,"Confirm datum, coordinate epoch and acceptable location error before conversion."
+rasters/kambalda_dem_1s_sample.tif,units,unverified,Obtain authoritative VARIABLE unit; map-coordinate units are insufficient.
+rasters/kambalda_dem_1s_sample.tif,resolution,unverified,Choose target grid spacing in its native unit; do not infer metres from filename.
+rasters/kambalda_dem_1s_sample.tif,nodata,unverified,"Confirm sentinel, mask and validity; absence is not zero missing values."
+rasters/kambalda_dem_1s_sample.tif,extent,agree,Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap.
+rasters/kambalda_dem_1s_sample.tif,alignment,agree,Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum.
+rasters/kambalda_grav_cscba.tif,crs,disagree,"Confirm datum, coordinate epoch and acceptable location error before conversion."
+rasters/kambalda_grav_cscba.tif,units,unverified,Obtain authoritative VARIABLE unit; map-coordinate units are insufficient.
+rasters/kambalda_grav_cscba.tif,resolution,agree,Choose target grid spacing in its native unit; do not infer metres from filename.
+rasters/kambalda_grav_cscba.tif,nodata,agree,"Confirm sentinel, mask and validity; absence is not zero missing values."
+rasters/kambalda_grav_cscba.tif,extent,unverified,Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap.
+rasters/kambalda_grav_cscba.tif,alignment,unverified,Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum.
+rasters/kambalda_k_pctk.tif,crs,disagree,"Confirm datum, coordinate epoch and acceptable location error before conversion."
+rasters/kambalda_k_pctk.tif,units,unverified,Obtain authoritative VARIABLE unit; map-coordinate units are insufficient.
+rasters/kambalda_k_pctk.tif,resolution,disagree,Choose target grid spacing in its native unit; do not infer metres from filename.
+rasters/kambalda_k_pctk.tif,nodata,agree,"Confirm sentinel, mask and validity; absence is not zero missing values."
+rasters/kambalda_k_pctk.tif,extent,unverified,Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap.
+rasters/kambalda_k_pctk.tif,alignment,unverified,Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum.
+rasters/kambalda_mag_1vd.tif,crs,disagree,"Confirm datum, coordinate epoch and acceptable location error before conversion."
+rasters/kambalda_mag_1vd.tif,units,unverified,Obtain authoritative VARIABLE unit; map-coordinate units are insufficient.
+rasters/kambalda_mag_1vd.tif,resolution,disagree,Choose target grid spacing in its native unit; do not infer metres from filename.
+rasters/kambalda_mag_1vd.tif,nodata,agree,"Confirm sentinel, mask and validity; absence is not zero missing values."
+rasters/kambalda_mag_1vd.tif,extent,unverified,Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap.
+rasters/kambalda_mag_1vd.tif,alignment,unverified,Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum.
+rasters/kambalda_th_ppm.tif,crs,disagree,"Confirm datum, coordinate epoch and acceptable location error before conversion."
+rasters/kambalda_th_ppm.tif,units,unverified,Obtain authoritative VARIABLE unit; map-coordinate units are insufficient.
+rasters/kambalda_th_ppm.tif,resolution,disagree,Choose target grid spacing in its native unit; do not infer metres from filename.
+rasters/kambalda_th_ppm.tif,nodata,agree,"Confirm sentinel, mask and validity; absence is not zero missing values."
+rasters/kambalda_th_ppm.tif,extent,unverified,Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap.
+rasters/kambalda_th_ppm.tif,alignment,unverified,Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum.
+rasters/kambalda_tmi_40m.tif,crs,disagree,"Confirm datum, coordinate epoch and acceptable location error before conversion."
+rasters/kambalda_tmi_40m.tif,units,unverified,Obtain authoritative VARIABLE unit; map-coordinate units are insufficient.
+rasters/kambalda_tmi_40m.tif,resolution,disagree,Choose target grid spacing in its native unit; do not infer metres from filename.
+rasters/kambalda_tmi_40m.tif,nodata,agree,"Confirm sentinel, mask and validity; absence is not zero missing values."
+rasters/kambalda_tmi_40m.tif,extent,unverified,Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap.
+rasters/kambalda_tmi_40m.tif,alignment,unverified,Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum.
+rasters/kambalda_u_ppm.tif,crs,disagree,"Confirm datum, coordinate epoch and acceptable location error before conversion."
+rasters/kambalda_u_ppm.tif,units,unverified,Obtain authoritative VARIABLE unit; map-coordinate units are insufficient.
+rasters/kambalda_u_ppm.tif,resolution,disagree,Choose target grid spacing in its native unit; do not infer metres from filename.
+rasters/kambalda_u_ppm.tif,nodata,agree,"Confirm sentinel, mask and validity; absence is not zero missing values."
+rasters/kambalda_u_ppm.tif,extent,unverified,Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap.
+rasters/kambalda_u_ppm.tif,alignment,unverified,Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum.
+rasters/ga_tmi_regional.tif,crs,disagree,"Confirm datum, coordinate epoch and acceptable location error before conversion."
+rasters/ga_tmi_regional.tif,units,unverified,Obtain authoritative VARIABLE unit; map-coordinate units are insufficient.
+rasters/ga_tmi_regional.tif,resolution,disagree,Choose target grid spacing in its native unit; do not infer metres from filename.
+rasters/ga_tmi_regional.tif,nodata,unverified,"Confirm sentinel, mask and validity; absence is not zero missing values."
+rasters/ga_tmi_regional.tif,extent,unverified,Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap.
+rasters/ga_tmi_regional.tif,alignment,unverified,Select datum operation and target lattice; numerical half-cell offsets alone do not resolve datum.
+vectors/ga_ozmin.geojson,crs,unverified,"Confirm datum, coordinate epoch and acceptable location error before conversion."
+vectors/ga_ozmin.geojson,units,unverified,Obtain authoritative VARIABLE unit; map-coordinate units are insufficient.
+vectors/ga_ozmin.geojson,resolution,unverified,Choose target grid spacing in its native unit; do not infer metres from filename.
+vectors/ga_ozmin.geojson,nodata,unverified,"Confirm sentinel, mask and validity; absence is not zero missing values."
+vectors/ga_ozmin.geojson,extent,unverified,Choose analysis AOI and required overlap fraction; bbox overlap is not valid-data overlap.
+vectors/ga_ozmin.geojson,alignment,unverified,Not a selected single raster grid; alignment is not established.
